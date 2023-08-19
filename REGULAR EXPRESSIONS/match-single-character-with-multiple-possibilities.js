@@ -2,7 +2,7 @@
  * You can search for a literal pattern with some flexibility
  * with character classes. Character classes allow you to define
  * a group of characters you wish to match by placing them inside
- * squeare [] brackets.
+ * square [] brackets.
  * 
  * Example:
  * you want to match bag, big, and bug but not bog. You can

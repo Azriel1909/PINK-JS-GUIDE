@@ -182,3 +182,31 @@ console.log("--> Autoboxing");
 let aRiver = "Mekong";
 let character = aRiver.charAt(2);
 console.log(character);
+
+console.log("--> String Methods");
+
+// * 1. Length: returns the number of characters in a string.
+// * 2. charAt: returns the character at the index position.
+// * 3. slice(beginIndex, [optional] endIndex): returns a new string that is created from the characters between beginIndex (included) and endIndex (excluded).
+// ! If endIndex is omitted, then the new string is from beginIndex to the end of the string.
+// * 4. split(separator, [optional] limit): splits the string into substrings whenever a separator is found in that string, and returns an array of those substrings, while an optional limit limits the number of substrings added to the list.
+
+let str = "java script language";
+   
+console.log(str.length); 
+console.log('test'.length); 
+
+console.log(str.charAt(0)); 
+console.log('abc'.charAt(1)); 
+   
+console.log(str.slice(0, 4)); 
+console.log('test'.slice(1, 3)); 
+   
+console.log(str.split(' ')); 
+console.log('192.168.1.1'.split('.')); 
+
+
+
+
+
+

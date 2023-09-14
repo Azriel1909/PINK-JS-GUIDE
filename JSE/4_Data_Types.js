@@ -109,3 +109,23 @@ console.log(7n/4n);             // -> 1n
 
 // let big3 = 1000n + 20;
 
+// + String: It represents a sequence of characters forming a piece of text. Common operations on text include concatenation, extraction of the substring, and checking the length of the String. 
+
+console.log("--> String");
+
+let myCountry = "Malawi";
+let myContinent = 'Africa';
+   
+console.log(myCountry);           // -> Malawi
+console.log(typeof(myCountry));   // -> string
+console.log(myContinent);         // -> Africa
+console.log(typeof(myContinent)); // -> string
+
+// + If you use double quotes to marl a String, you can place single quotes inside the String, and they will be treated as ordinary characters, this will work in the opposite situation.
+
+let message1 = "I love 'Apfelsaft', apple juice.";
+let message2 = 'My lastname is "Toledo".';
+   
+console.log(message1); 
+console.log(message2); 
+

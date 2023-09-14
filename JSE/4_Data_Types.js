@@ -87,3 +87,25 @@ let g = "it's definitely not a number";
 let h = g * 10;
 console.log(h);          // -> NaN
 console.log(typeof(h));  // -> number
+
+// + BigInt: It is not used too often, it allows us to write integers of virtually any length.
+
+// + We can use mathematical operations on BigInts in the same way as on Numbers, but there is a difference when dividing. 
+
+// ! As the BigInt is an integer type, the division result will always be rounded down to the nearest whole number.
+
+console.log("--> BigInt");
+
+let myBigInt = 1234567890000000000000n;
+let myBigInt2 = 1n;
+   
+console.log(myBigInt);          // -> 1234567890000000000000n
+console.log(typeof(myBigInt));  // -> bigint
+   
+console.log(myBigInt2);         // -> 1n
+console.log(7n/4n);             // -> 1n
+
+// ! WARNING: You cannot add a BigInt and a Number to each other.
+
+// let big3 = 1000n + 20;
+

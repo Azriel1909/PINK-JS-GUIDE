@@ -164,5 +164,21 @@ console.log("--> String Interpolation");
 
 let myName2 = "Ximena";
 let myItem = "Pizza";
-let sentence = `Hi, I am ${myName2} and I love ${myItem} !`;
+let sentence = `Hi, I am ${myName2} and I love the ${myItem}!`;
 console.log(sentence);
+
+// ? What is a method? Special kind of function that belongs to an object.
+
+console.log("--> Methods");
+
+console.time();
+console.log("test console");
+console.timeEnd();
+
+// ? What is Autoboxing? If a dot appears after a literal representing a primitive type, or after a variable containing this type of data, the Js Interpreter tries to treat this value as an object and not a primitive value. 
+
+console.log("--> Autoboxing");
+
+let aRiver = "Mekong";
+let character = aRiver.charAt(2);
+console.log(character);

@@ -157,3 +157,12 @@ console.log(typeof(myPath3));
 let myTest2 = "100" + "10";
 console.log(myTest2);
 console.log(typeof(myTest2));
+
+// * String Interpolation: It allows you to treat a character string as a template, in which you can place values in selected places.
+
+console.log("--> String Interpolation");
+
+let myName2 = "Ximena";
+let myItem = "Pizza";
+let sentence = `Hi, I am ${myName2} and a love ${myItem} !`;
+console.log(sentence);

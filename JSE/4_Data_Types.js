@@ -129,3 +129,31 @@ let message2 = 'My lastname is "Toledo".';
 console.log(message1); 
 console.log(message2); 
 
+// ! If you want to put a single or double quote inside the String, you can also ise the 'Backslash' \.
+
+let myMessage1 = 'I love \'Apfelsaft\', apple juice.';
+let myMessage2 = "My last name is \"Toledo\".";
+   
+console.log(message1);
+console.log(message2);
+let myPath = "C:\\Windows";
+console.log(myPath);
+
+// ! If the character strings consists of digits, the automatic conversion will be successful and we will get the result of the arithmetic action as a Number Type Value.
+
+let myPath2 = "C:\\Windows" - "Windows";
+// console.log(myPath2); // -> NaN
+   
+let myTest = "1000" - "100";
+console.log(myTest); 
+console.log(typeof(myTest));
+
+// ! WARNING: The exception is the "addition operation", which will not be treated as an arithmetic one, but as an attempt to create a new string by combining two input strings. 
+
+let myPath3 = "C:\\" + "Windows";
+console.log(myPath3);
+console.log(typeof(myPath3));
+
+let myTest2 = "100" + "10";
+console.log(myTest2);
+console.log(typeof(myTest2));

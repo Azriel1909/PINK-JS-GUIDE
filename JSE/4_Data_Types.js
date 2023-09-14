@@ -164,5 +164,5 @@ console.log("--> String Interpolation");
 
 let myName2 = "Ximena";
 let myItem = "Pizza";
-let sentence = `Hi, I am ${myName2} and a love ${myItem} !`;
+let sentence = `Hi, I am ${myName2} and I love ${myItem} !`;
 console.log(sentence);

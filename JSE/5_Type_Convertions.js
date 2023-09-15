@@ -46,4 +46,37 @@ console.log(typeof(numFromStr));
 console.log(boolFromNumber);
 console.log(typeof(boolFromNumber));
 
+// + Conversions to String: String Interpolation. 
 
+console.log("--> Conversions to String");
+
+console.log("----");
+let myNewStr = "Ximena Toledo";
+let strStr = String(myNewStr);
+console.log(`${typeof(myNewStr)} : ${myNewStr}`); 
+console.log(`${typeof(strStr)} : ${strStr}`); 
+console.log("----");
+let myNewNum = 1990;
+let strNr = String(myNewNum);
+console.log(`${typeof(myNewNum)} : ${myNewNum}`); 
+console.log(`${typeof(strNr)} : ${strNr}`);
+console.log("----");
+let myNewBool = true;
+let strBl = String(myNewBool);
+console.log(`${typeof(myNewBool)} : ${myNewBool}`);
+console.log(`${typeof(strBl)} : ${strBl}`);
+console.log("----");
+let myNewBigInt = 129n;
+let strBnr = String(myNewBigInt);
+console.log(`${typeof(myNewBigInt)} : ${myNewBigInt}`);
+console.log(`${typeof(strBnr)} : ${strBnr}`); 
+console.log("----");
+let myNewUndefined = undefined;
+let strUn = String(myNewUndefined);
+console.log(`${typeof(myNewUndefined)} : ${myNewUndefined}`);
+console.log(`${typeof(strUn)} : ${strUn}`); 
+console.log("----");
+let myNewNull = null;
+let strN = String(myNewNull);
+console.log(`${typeof(myNewNull)} : ${myNewNull}`); 
+console.log(`${typeof(strN)} : ${strN}`);

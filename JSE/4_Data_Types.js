@@ -205,8 +205,32 @@ console.log('test'.slice(1, 3));
 console.log(str.split(' ')); 
 console.log('192.168.1.1'.split('.')); 
 
+// + Undefined: The undefined type has only one value, it is the default value that all variables have after a declaration if no value is assigned to them.
 
+console.log("--> Undefined");
 
+let declaredLetVariable;
+console.log(typeof declaredLetVariable); // -> undefined
+   
+declaredLetVariable = 5;
+console.log(typeof declaredLetVariable); // -> number
+   
+declaredLetVariable = undefined;
+console.log(typeof declaredLetVariable); // -> undefined
+   
+// + Symbol: It does not have any literal value, and can only be created using a special constructor function.
 
+// + Null: The Null value is used to indicate that the variable does not contain anything (It is a complex type value).
 
+// ? If we want to indicate the variable does not contain anything we use Null.
+
+console.log("--> Null");
+
+let someResource;
+console.log(someResource); // -> undefined
+console.log(typeof(someResource)); // -> undefined
+   
+someResource = null;
+console.log(someResource); // -> null
+console.log(typeof(someResource)); // -> object
 

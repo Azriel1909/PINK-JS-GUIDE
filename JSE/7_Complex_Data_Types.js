@@ -29,5 +29,13 @@ let user1 = {
 console.log('----------- User Object');
 console.log(user1)
 
+console.log('----------- Modifying Objects');
+user1.name = 'Camilo Franco';
+console.log(user1);
+user1.surname = 'Franco';
+user1.email = 'franco88@outlook.com';
+console.log(user1);
 
-
+console.log('----------- Deleting properties');
+delete user1.age;
+console.log(user1);

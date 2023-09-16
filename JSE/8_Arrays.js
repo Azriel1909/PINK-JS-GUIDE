@@ -151,3 +151,18 @@ console.log(userNames.length)
 userNames.unshift('Carmen')
 console.log(userNames)
 console.log(userNames.length)
+
+console.log('----- Pop');
+
+// + The Pop method allows you to remove the last element of the array.
+
+// ? The length of the array is reduced by 1.
+
+console.log(userNames)
+console.log(userNames.length)
+
+let poppedName = userNames.pop()
+
+console.log(poppedName)
+console.log(userNames)
+console.log(userNames.length)

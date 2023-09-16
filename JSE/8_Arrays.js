@@ -38,6 +38,16 @@ console.log('----- Adding Different Elements');
 let myArr = ['Ximena', 'Pinki', 30, 'pink@gmail.com', false];
 console.log(myArr);
 
+console.log('----- Nested Arrays');
+let users = [
+  ['Ximena', 'Pinki', 30, 'pink@gmail.com', false],
+  ['Eduardo', 'Edu', 50, 'eduardo37@gmail.com', true],
+  ['Gonzalo', 'Gonzo', 20, 'gonzo9@gmail.com', false]
+]
+console.log(users)
+console.log(users[0])
+console.log(users[0][0])
+
 
 
 

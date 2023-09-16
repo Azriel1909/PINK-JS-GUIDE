@@ -139,3 +139,15 @@ userNames.push('Karla')
 console.log(userNames)
 console.log(userNames.length)
 
+console.log('----- Unshift');
+
+// + Unshift methods works similarly to push, the difference being that a new element is added to the beginning of th array.
+
+// ? The array length is increased by 1, all the old elements are moved to the right and the new element is placed in the empty space that has been creating at the beginning of the array.
+
+console.log(userNames)
+console.log(userNames.length)
+
+userNames.unshift('Carmen')
+console.log(userNames)
+console.log(userNames.length)

@@ -189,3 +189,41 @@ console.log(userNames.length)
 userNames.reverse()
 console.log(userNames)
 console.log(userNames.length)
+
+console.log('----- Slice');
+
+// + The Slice method allows you to create a new array from selected elements of the original array. It does not affect the original array.
+
+// ! Combinations
+
+/**
+ * 1. One argument larger than zero: All elements from the index given as an argument to the end of the array are copied.
+ * 2. Two arguments larger than zero: The element from the index specified as the 1st argument to the element specified as the second argument are copied.
+ * 3. Two arguments, 1st positive, second negative: All elements from the specified index to the end of the array are copied, except for the specified number of the last elements (e.g. argument -3 means that we do not copy the last three elements).
+ * 4. One negative argument: The specified number of the last elements are copied to the end of the array (e.g. -2 means that you copy the last two elements)..
+ */
+
+console.log(userNames)
+userNames.push('Karla')
+console.log(userNames)
+userNames.unshift('Carmen')
+console.log(userNames)
+console.log(userNames.length)
+
+console.log('------')
+let slicedNames_1 = userNames.slice(2)
+console.log(slicedNames_1)
+
+console.log('------')
+let slicedNames_2 = userNames.slice(1,3)
+console.log(slicedNames_2)
+
+console.log('------')
+let slicedNames_3 = userNames.slice(0, -1)
+console.log(slicedNames_3)
+
+console.log('------')
+let slicedNames_4 = userNames.slice(-1)
+console.log(slicedNames_4)
+
+

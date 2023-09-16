@@ -166,3 +166,26 @@ let poppedName = userNames.pop()
 console.log(poppedName)
 console.log(userNames)
 console.log(userNames.length)
+
+console.log('----- Shift');
+
+// + The Shift method works similarly to Pop, only this time we remove the elemento from the beginning of the array.
+
+console.log(userNames)
+console.log(userNames.length)
+
+let shiftedName = userNames.shift()
+console.log(userNames)
+console.log(userNames.length)
+console.log(shiftedName)
+
+console.log('----- Reverse');
+
+// + The Reverse method reverses the order of elements in the array. The 1st element of the original array will become the last, the second last but one, and so on.
+
+console.log(userNames)
+console.log(userNames.length)
+
+userNames.reverse()
+console.log(userNames)
+console.log(userNames.length)

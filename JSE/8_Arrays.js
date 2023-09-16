@@ -226,4 +226,14 @@ console.log('------')
 let slicedNames_4 = userNames.slice(-1)
 console.log(slicedNames_4)
 
+console.log('----- Concat');
 
+// + The Concat method creates a new array by attaching elements from the array given as an argument to the original array elements.
+
+console.log(userNames)
+let otherNames = ['Christian', 'Asya', 'Mert']
+let joinedNames = userNames.concat(otherNames)
+
+console.log(userNames)
+console.log(otherNames)
+console.log(joinedNames)

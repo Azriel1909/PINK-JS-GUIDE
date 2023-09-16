@@ -48,6 +48,50 @@ console.log(users)
 console.log(users[0])
 console.log(users[0][0])
 
+console.log('----- Object Arrays');
+
+let usersList = [
+  {
+    name: 'Ximena',
+    lastName: 'Toledo',
+    surname: 'Pinki',
+    age: 50,
+    email: 'ximi@gmail.com'
+  },
+  {
+    name: 'Eduardo',
+    lastName: 'Castillo',
+    surname: 'Eddy',
+    age: 40,
+    email: 'eddy@gmail.com'
+  },
+  {
+    name: 'Daniel',
+    lastName: 'Carrasco',
+    surname: 'phantom',
+    age: 50,
+    email: 'ghost66@gmail.com'
+  }
+]
+
+console.log(usersList)
+console.log(usersList[0])
+console.log(usersList[0].name)
+console.log(usersList[0].age)
+
+console.log('----- Object Arrays: Adding a new element');
+
+usersList[3] = {
+  name: 'Joel',
+  lastName: 'Flores',
+  surname: 'Joe',
+  age: 20,
+  email: 'joel@gmail.com'
+}
+
+console.log(usersList)
+
+
 
 
 

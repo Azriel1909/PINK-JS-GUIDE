@@ -107,6 +107,35 @@ console.log(typeof(day))
 console.log(weekDays instanceof(Array))
 console.log(day instanceof(Array))
 
+console.log('----- Length');
 
+// + The length property is used to get the number of elements of the array.
 
+let userNames = ['Marcos', 'Dylan', 'Roberto', 'Ximena'];
+console.log(userNames.length)
+console.log(userNames)
+
+userNames[4] = 'Joel'
+console.log(userNames.length)
+console.log(userNames)
+
+console.log('----- IndexOf');
+
+// + IndexOf method is used to search the array to locate a given value. If the value is found, its index will be returned. The method returns -1 if the element is not found.
+
+console.log(userNames.indexOf('Ximena'))
+console.log(userNames.indexOf('Marcos'))
+
+console.log('----- Push');
+
+// + The push method places the element given as its argument at the end of the array.
+
+// ! The length of the array is increased by 1, and the new element is inserted on the right.
+
+console.log(userNames)
+console.log(userNames.length)
+
+userNames.push('Karla')
+console.log(userNames)
+console.log(userNames.length)
 

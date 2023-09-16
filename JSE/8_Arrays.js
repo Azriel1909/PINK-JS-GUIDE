@@ -91,10 +91,21 @@ usersList[3] = {
 
 console.log(usersList)
 
+console.log('----- Object Arrays: A little experiment');
 
+let weekDays = ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'];
 
+console.log(weekDays)
+console.log(typeof(weekDays))
 
+// ! Arrays are also treated as a special kind of object. The typeof operator does not distinguish between object types (classes), so it informs us that the weekDays variables contains an object.
 
+// ? If we would like to make sure that the variable contains an array, we can do it using the instanceof operator.
+
+let day = 'Mon'
+console.log(typeof(day))
+console.log(weekDays instanceof(Array))
+console.log(day instanceof(Array))
 
 
 

@@ -19,6 +19,28 @@ console.log(days)
 days[0] = 'Mon';
 console.log(days)
 
+console.log('----- Empty Arrays');
+let myArray = [];
+console.log(myArray)
+console.log(myArray[0])
+
+console.log('----- Adding Elements');
+let animals = [];
+animals[0] = 'Panda';
+animals[1] = 'Fox';
+animals[2] = 'Goat';
+animals[3] = 'Hen';
+animals[4] = 'Rabbit';
+
+console.log(animals);
+
+console.log('----- Adding Different Elements');
+let myArr = ['Ximena', 'Pinki', 30, 'pink@gmail.com', false];
+console.log(myArr);
+
+
+
+
 
 
 

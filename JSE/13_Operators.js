@@ -110,6 +110,33 @@ console.log(mySpecialNum)
 console.log(++mySpecialNum)
 console.log(mySpecialNum)
 
+// + Compound Assignment Operators: Binary Arithmetic Operators can be combined with the assignment operator, resulting in the addition assignment '-=', the multiplication assignment '*=', the division assignment '/=', the remainder assignment '%=', and the power assignment '**='.
+
+// ! Each of these operators takes a value from the variable ro which the assignment is to be made (the left operand) and modifies it by performing an arithmetic operation using the right operand value.
+
+console.log('---------- Compound Assignment Operators ')
+
+let a = 100;
+
+a += 10
+console.log(a)
+
+a -= 10
+console.log(a)
+
+a *= 10
+console.log(a)
+
+a /= 10
+console.log(a)
+
+a **= 10
+console.log(a)
+
+a %= 10
+console.log(a)
+
+
 // + Prefix Operators (Occurring before the operand)
 
 // + Postfix Operators (Occurring after the operand)

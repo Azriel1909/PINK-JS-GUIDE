@@ -28,3 +28,29 @@ console.log(contacts)
 console.log(contacts.length)
 console.log(contacts[0])
 console.log(contacts[3])
+
+console.log('--------------')
+let height = 180;
+{
+let height = 200;
+height = height + 10;
+}
+console.log(height);
+
+console.log('--------------')
+let x = 10 / 100;
+{
+console.log(typeof (x));
+}
+
+let x2 = 100 / 0;
+console.log(x2)
+
+// let x3 = 20n + 10;
+// console.log(x3)
+
+let x4 = "Alice" + 10;
+console.log(x4)
+
+let x5 = "abcdefg".slice(2, 4)
+console.log(x5)

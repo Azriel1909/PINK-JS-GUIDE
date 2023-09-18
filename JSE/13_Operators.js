@@ -136,12 +136,34 @@ console.log(a)
 a %= 10
 console.log(a)
 
+// + Logical Operators: They work with Boolean type values, conjunction && (AND), alternative || (OR), and negation ! (NOT).
+
+// ? AND returns true if both operands are true.
+
+// ? OR returns true if one operands are true.
+
+// ? NOT operator is an unary, and it changes the logical value of the operand to its opposite.
+
+console.log('---------- Logical Operators ')
+
+console.log('> AND')
+console.log(true && true)
+console.log(true && false)
+console.log(false && true)
+console.log(false && false)
+
+console.log('> OR')
+console.log(true || true)
+console.log(true || false)
+console.log(false || true)
+console.log(false || false)
+
+console.log('> NOT')
+console.log(!true)
+console.log(!false)
 
 // + Prefix Operators (Occurring before the operand)
 
 // + Postfix Operators (Occurring after the operand)
 
 // + Infix Operators (Occurring between the operand)
-
-
-

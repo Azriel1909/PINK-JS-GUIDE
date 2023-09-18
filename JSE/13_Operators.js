@@ -162,6 +162,26 @@ console.log('> NOT')
 console.log(!true)
 console.log(!false)
 
+console.log('---------- Logical Operators and non-Boolean Values')
+
+// ! NOT operator will always return either false or true values.
+
+let myNumber = 9
+let randomYear = 2030
+let mySurname = 'Pinki'
+let empty = ''
+console.log('---- !')
+console.log(!myNumber)
+console.log(!randomYear)
+console.log(!mySurname)
+console.log(!empty)
+console.log('---- !!')
+console.log(!!myNumber)
+console.log(!!randomYear)
+console.log(!!mySurname)
+console.log(!!empty)
+
+
 // + Prefix Operators (Occurring before the operand)
 
 // + Postfix Operators (Occurring after the operand)

@@ -50,6 +50,22 @@ console.log(`Division: ${myDivision}`)
 console.log(`Division Remainder: ${myDivisionRemainder}`)
 console.log(`Power: ${myPower}`)
 
+// + Unary Arithmetic Operator: Operating on a single operand.
+
+console.log('---------- Unary Arithmetic Operator')
+
+let myStr = '12345'
+let num1 = +myStr
+let num2 = -myStr
+let num3 = -num2
+let num4 = +'abcdef'
+
+console.log(`Typeof: ${typeof(myStr)}, Value: ${myStr}`)
+console.log(`Typeof: ${typeof(num1)}, Value: ${num1}`)
+console.log(`Typeof: ${typeof(num2)}, Value: ${num2}`)
+console.log(`Typeof: ${typeof(num3)}, Value: ${num3}`)
+console.log(`Typeof: ${typeof(num4)}, Value: ${num4}`)
+
 // + Prefix Operators (Occurring before the operand)
 
 // + Postfix Operators (Occurring after the operand)

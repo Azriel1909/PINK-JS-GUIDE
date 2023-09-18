@@ -66,6 +66,40 @@ console.log(`Typeof: ${typeof(num2)}, Value: ${num2}`)
 console.log(`Typeof: ${typeof(num3)}, Value: ${num3}`)
 console.log(`Typeof: ${typeof(num4)}, Value: ${num4}`)
 
+// + Unary Increment and Decrement Operators: The unary increment is '++' and the unary decrement is '--', in both prefix and postfix versions. They allow to increase (increment) or decrease (decrement) the value of the operand by 1.
+
+// ! Warning: The postfix version (the operator on the right of the operand, i++) performs the operation by changing tje value of the variable, but returns the value before the change.
+
+// ! Warning: The prefix version of the operator (the operator is placed before the operand, ++i) performs the operation and returns the new value.
+
+
+console.log('---------- Unary Increment and Decrement Operators')
+
+let myValue1 = 20;
+let myValue2 = 20;
+
+let myV1Increment2 = ++myValue1;
+let myV1Decrement2 = --myValue1;
+let myV1Increment = myValue1++;
+let myV1Decrement = myValue1--;
+
+let myV2Increment2 = ++myValue2;
+let myV2Decrement2 = --myValue2;
+let myV2Increment = myValue2++;
+let myV2Decrement = myValue2--;
+
+console.log(`Normal Value: ${myValue1}`)
+console.log(`Prefix Increment Value: ${myV1Increment2}`)
+console.log(`Prefix Decrement Value: ${myV1Decrement2}`)
+console.log(`Postfix Increment Value: ${myV1Increment}`)
+console.log(`Postfix Decrement Value: ${myV1Decrement}`)
+
+console.log(`Normal Value: ${myValue2}`)
+console.log(`Prefix Increment Value: ${myV2Increment2}`)
+console.log(`Prefix Decrement Value: ${myV2Decrement2}`)
+console.log(`Postfix Increment Value: ${myV2Increment}`)
+console.log(`Postfix Decrement Value: ${myV2Decrement}`)
+
 // + Prefix Operators (Occurring before the operand)
 
 // + Postfix Operators (Occurring after the operand)

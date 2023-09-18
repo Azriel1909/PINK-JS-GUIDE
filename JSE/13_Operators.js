@@ -100,6 +100,16 @@ console.log(`Prefix Decrement Value: ${myV2Decrement2}`)
 console.log(`Postfix Increment Value: ${myV2Increment}`)
 console.log(`Postfix Decrement Value: ${myV2Decrement}`)
 
+// ? Example
+
+let mySpecialNum = 10;
+
+console.log(mySpecialNum)
+console.log(mySpecialNum++)
+console.log(mySpecialNum)
+console.log(++mySpecialNum)
+console.log(mySpecialNum)
+
 // + Prefix Operators (Occurring before the operand)
 
 // + Postfix Operators (Occurring after the operand)

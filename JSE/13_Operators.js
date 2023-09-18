@@ -181,6 +181,25 @@ console.log(!!randomYear)
 console.log(!!mySurname)
 console.log(!!empty)
 
+// ! AND and OR do not return a boolean value, they return the first or second operand. The AND operator will return the first operand if it evaluates to false, and the second operand otherwise. The OR operator will return its first operand if it evaluates to true, and the second operand otherwise.
+
+console.log('---- AND')
+console.log(true && 2001)
+console.log(false && 2001)
+console.log(2 && 9)
+console.log(0 && 9)
+console.log('Alice' && 'Bob')
+console.log('' && 'Bob')
+
+console.log('---- OR')
+console.log(true || 2001)
+console.log(false || 2001)
+console.log(2 || 9)
+console.log(0 || 9)
+console.log('Alice' || 'Bob')
+console.log('' || 'Bob')
+
+
 
 // + Prefix Operators (Occurring before the operand)
 

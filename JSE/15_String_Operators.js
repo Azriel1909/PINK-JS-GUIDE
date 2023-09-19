@@ -53,8 +53,30 @@ console.log(undefined == false)
 console.log(NaN == false)
 console.log(NaN == NaN)
 
+// ? There are also complementary operators to those just demonstrate the nonidentity operator !== and the inequality operator !=. The 1st returns True if the operands are not identical, in other words, they are equal but different types. The 2nd returns true if the operands are different.
 
+console.log('> Nonidentity Operator')
+console.log(10 !== 5)
+console.log(10 !== 10)
+console.log(10 !== 10n)
+console.log(10 !== '10')
+console.log('10' !== '10')
+console.log('Alice' !== 'Bob')
+console.log(0 !== false)
+console.log(1 !== true)
+console.log(undefined !== false)
+console.log(NaN !== false)
+console.log(NaN !== NaN)
 
-
-
-
+console.log('> Inequality Operator')
+console.log(10 != 5)
+console.log(10 != 10)
+console.log(10 != 10n)
+console.log(10 != '10')
+console.log('10' != '10')
+console.log('Alice' != 'Bob')
+console.log(0 != false)
+console.log(1 != true)
+console.log(undefined != false)
+console.log(NaN != false)
+console.log(NaN != NaN)

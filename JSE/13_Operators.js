@@ -199,7 +199,19 @@ console.log(0 || 9)
 console.log('Alice' || 'Bob')
 console.log('' || 'Bob')
 
+// + Compound Assignment Operators: Just like arithmetic operators, binary logical operators can be used in combination with assignment operator, creating a logical AND assignment &&= and the logical OR assignment ||=.
 
+console.log('---------- Compound Assignment Operators')
+
+let c = true
+console.log(`Value: ${c}, Data Type: ${typeof(c)}`)
+c &&= false // c = c && false
+console.log(`Value: ${c}, Data Type: ${typeof(c)}`)
+
+let d = false
+console.log(`Value: ${d}, Data Type: ${typeof(d)}`)
+d ||= true // b = b && true
+console.log(`Value: ${d}, Data Type: ${typeof(d)}`)
 
 // + Prefix Operators (Occurring before the operand)
 

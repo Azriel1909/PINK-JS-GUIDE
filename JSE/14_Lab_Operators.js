@@ -15,7 +15,6 @@ console.log(2 + 2 * 2 != 4);
 
 // - Logical Operators
 console.log('---------------');
-
 console.log(true || false);
 console.log(false || !false);
 console.log(false && false || true);

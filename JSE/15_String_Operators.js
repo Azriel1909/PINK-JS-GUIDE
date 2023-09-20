@@ -139,7 +139,7 @@ console.log(NaN <= NaN)
 
 // + Other Operators 
 
-// + TypeOf: Unary Operator, which checks the type of operand (it can be a variable or literal).
+// + typeOf: Unary Operator, which checks the type of operand (it can be a variable or literal).
 
 console.log('> TypeOf Operator')
 
@@ -154,3 +154,19 @@ let myNames = ['Ximena', 'David', 'Asia']
 let singleName = myNames[0]
 console.log(myNames instanceof(Array))
 console.log(singleName instanceof(Array))
+
+// + delete operator allows you to delete a selected field of the object whose name is indicates with an operand.
+
+console.log('> delete Operator')
+
+let myUser = {
+  name: 'Jorge',
+  age: 30,
+  surname: 'Barracuda'
+}
+console.log(myUser)
+console.log(`Data: ${myUser.surname}`)
+delete myUser.surname
+console.log(myUser)
+console.log(`Data: ${myUser.surname}`)
+

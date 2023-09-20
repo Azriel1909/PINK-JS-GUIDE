@@ -170,3 +170,12 @@ delete myUser.surname
 console.log(myUser)
 console.log(`Data: ${myUser.surname}`)
 
+// + ternary operator is a conditional operator, based on the value of the 1st operand (true or false), the value of the second or third operand, respectively, is returned.
+
+console.log('> ternary Operator')
+
+console.log(true ? 'Alice' : 'Bob')
+console.log(false ? 'Alice' : 'Bob')
+
+let myNewName = 1 > 2 ? 'Alice' : 'Bob'
+console.log(myNewName)

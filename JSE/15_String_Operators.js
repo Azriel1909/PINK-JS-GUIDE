@@ -134,3 +134,23 @@ console.log(1 <= true)
 console.log(undefined <= false)
 console.log(NaN <= false)
 console.log(NaN <= NaN)
+
+// ! WARNING Single characters of both strings are tested on the same positions. it is assumed that the values of the single characters corresponds to their positions in the alphabet. Upper case letters have lower values than lower-case, and digits have even lower values.
+
+// + Other Operators 
+
+// + TypeOf: Unary Operator, which checks the type of operand (it can be a variable or literal).
+
+console.log('> TypeOf Operator')
+
+let newYear = 2024
+console.log(`Value: ${newYear}, Data Type: ${typeof(newYear)}`)
+
+// + instanceof: it is a binary operator that checks whether an object (left operand) is of some type (right operand). Depending of the result, it returns true or false. 
+
+console.log('> instanceof Operator')
+
+let myNames = ['Ximena', 'David', 'Asia']
+let singleName = myNames[0]
+console.log(myNames instanceof(Array))
+console.log(singleName instanceof(Array))

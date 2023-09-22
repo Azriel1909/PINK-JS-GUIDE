@@ -52,3 +52,23 @@ if (myUserIsHappy) {
 } else {
   console.log('You are sad!')
 }
+
+// * The If...Else...If Statement: We can nest if...else statements 
+
+// - A multilevel If
+let myNumber = prompt('Enter a number: ', 0)
+if (myNumber < 10) {
+  alert(`The number is ${Number(myNumber)}, < 10`)
+} else if (myNumber < 30) {
+  alert(`The number is ${Number(myNumber)}, < 30`)
+} else if (myNumber < 60) {
+  alert(`The number is ${Number(myNumber)}, < 60`)
+} else if (myNumber < 90) {
+  alert(`The number is ${Number(myNumber)}, < 90`)
+} else if (myNumber < 100) {
+  alert(`The number is ${Number(myNumber)}, < 100`)
+} else if (myNumber == 100) {
+  alert(`The number is ${Number(myNumber)}`)
+} else {
+  alert(`The data is ${myNumber}, please enter a number value.`)
+}

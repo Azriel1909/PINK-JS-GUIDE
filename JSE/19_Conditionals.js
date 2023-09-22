@@ -42,3 +42,13 @@ if (myUserAge > 18 && (cartValue >= 300 || points >= 500)) {
 }
 
 console.log(shippingCost)
+
+// * The If...Else Statement
+
+let myUserIsHappy = confirm('Are you happy?')
+
+if (myUserIsHappy) {
+  console.log('You are happy, yeah!')
+} else {
+  console.log('You are sad!')
+}

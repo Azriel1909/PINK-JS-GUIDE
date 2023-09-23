@@ -17,3 +17,6 @@ console.log(`The Price: ${myPrice} \nThe total shipping cost: ${shippingCost}`)
 shippingCost = myPrice > 50 ? 0 : 5
 console.log('---------------------------------------')
 console.log(`The Price: ${myPrice} \nThe total shipping cost: ${shippingCost}`)
+
+let userAnswer = confirm('Do you want to start?')
+userAnswer ? alert('Here we go!') : alert('Aborted!')

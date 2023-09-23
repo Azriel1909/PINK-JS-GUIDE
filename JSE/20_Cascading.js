@@ -31,3 +31,5 @@ if (myOrderIsValid && addInsurance && !hasPromoCode) {
   shippingCost += INSURANCE_COST
   console.log(`Total Insurance Cost: ${shippingCost}`)
 }
+
+

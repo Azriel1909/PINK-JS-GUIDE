@@ -30,12 +30,12 @@ switch(selectOption) {
     let enterName = prompt('Enter name:')
     let enterPhone = prompt('Enter phone:')
     let enterEmail = prompt('Enter email:')
-    let newContact = contacts.push({
+    contacts.push({
       name: enterName,
       phone: enterPhone,
       email: enterEmail
     })
-    alert(`Name: ${newContact.name}\nPhone: ${newContact.phone}\nEmail: ${newContact.email}`)
+    alert(`Name: ${enterName}\nPhone: ${enterPhone}\nEmail: ${enterEmail}`)
     break
   default:
     alert('Please enter a valid value!')

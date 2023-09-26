@@ -18,3 +18,11 @@ while(gameOver != true) {
   gameOver = continueGame === true ? false : true
   myCounter++
 }
+
+// Another way
+
+console.log(!gameOver)
+
+while(!gameOver) {
+  gameOver = !confirm(`${myCounter++} - Do you want to continue?`)
+}

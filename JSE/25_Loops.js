@@ -9,3 +9,12 @@ while (n < 100) {
   console.log(n)
   n+=10
 }
+
+let gameOver = false
+let myCounter = 1
+
+while(gameOver != true) {
+  let continueGame = confirm(`${myCounter} - Do you want to continue?`)
+  gameOver = continueGame === true ? false : true
+  myCounter++
+}

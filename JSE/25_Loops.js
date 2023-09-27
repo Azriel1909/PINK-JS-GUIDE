@@ -26,3 +26,9 @@ console.log(!gameOver)
 while(!gameOver) {
   gameOver = !confirm(`${myCounter++} - Do you want to continue?`)
 }
+
+// + Do ... While Loop: The condition checked before each iteration. The Do While Loop code is always executed at least once before the 1st condition check is done.
+
+do {
+  gameOver = !confirm(`${myCounter++} - Do you want to continue?`)
+} while(!gameOver)

@@ -32,3 +32,15 @@ while(!gameOver) {
 do {
   gameOver = !confirm(`${myCounter++} - Do you want to continue?`)
 } while(!gameOver)
+
+// Another example
+
+let myCondition = false
+
+while (myCondition) {
+  console.log('A While Loop Iteration')
+}
+
+do {
+  console.log('A While Loop Iteration')
+} while(myCondition)

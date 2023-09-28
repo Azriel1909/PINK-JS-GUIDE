@@ -44,3 +44,11 @@ while (myCondition) {
 do {
   console.log('A While Loop Iteration')
 } while(myCondition)
+
+// + The for Loop
+
+/** Structure
+for (initialization; condition; increment) {
+  block of code
+}
+ */

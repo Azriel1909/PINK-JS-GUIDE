@@ -51,8 +51,16 @@ do {
 for (initialization; condition; increment) {
   block of code
 }
- */
+*/
 
-for (let i = 0; i < 10; i++) {
+// * The for Loop Initialization Statement: It is executed only once , before the 1st iteration. Usually it is used to initialize a variable that will be used as a loop counter.
+
+// * The for Loop Condition Statement: It is an expression that is evaluated to a Boolean before each loop iteration. If the expression is evaluated to true, the loop will execute its code. In case the condition being evaluated to false, the loop is terminated, and no more iterations will be executed.
+
+// ! The condition statement is also optional, but if left empty, it will be assumed as always true.
+
+// * The for Loop Increment Statement: It is always executed at the end of the current loop iteration, and most of the time it is used to increment or decrement a loop counter that is used in a condition statement. It can be any expression, not only incrementation/decrementation. This can also be left empty.
+
+for (let i = 0; i <= 10; i++) {
   console.log(i);
 }

@@ -82,3 +82,21 @@ for (let i = 0; i < mySuperCoolValues.length; i++) {
 }
 
 console.log(mySum)
+
+// + Loops and Arrays
+
+let mySuperCoolNames = []
+let theGameIsOver = false
+
+while(!theGameIsOver) {
+  let mySuperCoolName = prompt('Enter your super cool name:')
+  if(mySuperCoolName != null) {
+    mySuperCoolNames.push(mySuperCoolName)
+  } else {
+    theGameIsOver = true
+  }
+}
+
+for (let i = 0; mySuperCoolNames.length; i++) {
+  console.log(mySuperCoolNames[i])
+}

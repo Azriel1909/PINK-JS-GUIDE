@@ -71,3 +71,14 @@ while (j <= 10) {
   console.log(j)
   j++
 }
+
+// ? A typical example of using a for loop, where we know the number of iterations i advance, is when going through the elements of an array.
+
+let mySuperCoolValues = [1,2,3,4,5,6,7,8,9,10]
+let mySum = 0
+
+for (let i = 0; i < mySuperCoolValues.length; i++) {
+  mySum += mySuperCoolValues[i]
+}
+
+console.log(mySum)

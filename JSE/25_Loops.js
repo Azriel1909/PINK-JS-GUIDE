@@ -88,7 +88,7 @@ console.log(mySum)
 let mySuperCoolNames = []
 let theGameIsOver = false
 
-while(!theGameIsOver) {
+while (!theGameIsOver) {
   let mySuperCoolName = prompt('Enter your super cool name:')
   if(mySuperCoolName != null) {
     mySuperCoolNames.push(mySuperCoolName)
@@ -97,6 +97,24 @@ while(!theGameIsOver) {
   }
 }
 
-for (let i = 0; mySuperCoolNames.length; i++) {
+for (let i = 0; i < mySuperCoolNames.length; i++) {
   console.log(mySuperCoolNames[i])
 }
+
+/**
+
+let names = [];
+let isOver = false;
+while (!isOver) {
+    let name = prompt("Enter another name or press cancel.");
+    if (name != null) {
+     names.push(name);
+    } else {
+     isOver = true;
+    }
+}
+for (let i = 0; i < names.length; i++){
+    console.log(names[i]);
+}
+
+ */

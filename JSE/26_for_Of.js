@@ -73,3 +73,21 @@ for (let key in myUser) {
   // ! We use Bracket Notation to retrieve the values stored in the fields
   console.log(`${key}: ${myUser[key]}`)
 }
+
+// * The Break and Continue Statements
+
+// > The Break Statement is used to termine the execution of a loop or a switch statement.
+
+let i = 0
+
+// An infinitive Loop
+
+while (true){
+  console.log(i)
+  i++
+  if (i>=9){
+    break
+  }
+}
+
+console.log(`Exited the loop with a break - ${i}.`)

@@ -102,3 +102,8 @@ for (let i = 0; i <= 19; i++){
   }
   console.log(i)
 }
+
+// ! The program skips the number 9, this happens because when i equals 9, the continue statement is executed, ending this iteration and skipping the console.log statement and starting another one.
+
+// ? Both break and continue are not used particularly often. We should definitely not use them when we can terminate the loop with a properly constructed condition.
+

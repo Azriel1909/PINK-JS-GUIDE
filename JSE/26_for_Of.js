@@ -107,3 +107,71 @@ for (let i = 0; i <= 19; i++){
 
 // ? Both break and continue are not used particularly often. We should definitely not use them when we can terminate the loop with a properly constructed condition.
 
+// * The Break Keyword: In contrast to if statements, switch statements do not execute just one branch, but rather they execute the entire code from the 1st case that matches until the end of the switch statement.
+
+// > This behavior is called Pass-Through and has some uses, but most of the time, we want to execute only one branch, and for that reason the break keyword is present.
+
+let card = prompt('Choose a card\na\nb\nc')
+let win = false
+
+// ! All alerts are displayed, even the default one without the break statement.
+
+switch (card) {
+  case 'a':
+    alert(`Card ${card} - Empty`)
+  case 'b':
+    alert(`Card ${card} - Gold`)
+    win = true
+  case 'c':
+    alert(`Card ${card} - Empty`)
+  default:
+    alert(`${String(card)}: It is not a value`)
+}
+
+if (win){
+  alert('Winner!')
+}
+
+switch (card) {
+  case 'a':
+    alert(`Card ${card} - Empty`)
+    break
+  case 'b':
+    alert(`Card ${card} - Gold`)
+    win = true
+    break
+  case 'c':
+    alert(`Card ${card} - Empty`)
+    break
+  default:
+    alert(`${String(card)}: It is not a value`)
+}
+
+if (win){
+  alert('Winner!')
+}
+
+switch (card) {
+  case 'a': {
+    let message = 'Gate a'
+    console.log(`${message} is empty.`)
+    break
+  }
+  case 'b': {
+    let message = 'Gate b'
+    console.log(`${message} is Gold!`)
+    win = true
+    break
+  }
+  case 'c': {
+    let message = 'Gate c'
+    console.log(`${message} is empty.`)
+    break
+  }
+  default:
+    alert(`${String(card)}: It is not a value`)
+}
+
+if (win){
+  alert('Winner!')
+}

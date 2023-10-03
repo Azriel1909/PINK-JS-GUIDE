@@ -16,12 +16,36 @@ while (j >= 10) {
 
 console.log('----------------')
 
-let max = prompt('Enter the maximum value')
-let min = prompt('Enter the minimum value')
+// let max = prompt('Enter the maximum value')
+// let min = prompt('Enter the minimum value')
 
-if (max > min) {
-  while(max>=min){
-    console.log(max)
-    max-=10
+// if (max > min) {
+//   while(max>=min){
+//     console.log(max)
+//     max-=10
+//   }
+// }
+
+console.log('----------------')
+
+let numbers = [21, 45, 100, 12, 11, 78, 61, 4, 39, 22];
+
+for (let number of numbers) {
+  console.log(number)
+}
+
+console.log('----------------')
+
+for (let number of numbers) {
+  if (number%2 === 0) {
+    console.log(number)
+  }
+}
+
+console.log('----------------')
+
+for (let number of numbers) {
+  if (number > 10 && number < 60) {
+    console.log(number)
   }
 }

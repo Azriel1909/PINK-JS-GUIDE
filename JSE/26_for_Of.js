@@ -13,8 +13,35 @@ for (let i = 0; i < mySuperCoolValues.length; i++) {
 
 console.log(`Total: ${mySum}`)
 
+// - For Of Loop Version
+
 for (let number of mySuperCoolValues) {
   mySum += number
 }
 
 console.log(`Total: ${mySum}`)
+
+// > The number variable will contain the subsequent elements of the values arrays in each iteration
+
+// - Another Example
+
+console.log('-----------------------------')
+
+let cities = [
+  { name: "New York", population: 18.65e6 },
+  { name: "Cairo", population: 18.82e6 },
+  { name: "Mumbai", population: 19.32e6 },
+  { name: "São Paulo", population: 20.88e6 },
+  { name: "Mexico City", population: 21.34e6 },
+  { name: "Shanghai", population: 23.48e6 },
+  { name: "Delhi", population: 25.87e6 },
+  { name: "Tokyo", population: 37.26e6 }
+];
+
+
+for (let city of cities) {
+  if(city.population > 20e6) {
+    console.log(`City Name - ${city.name}\nPopulation - ${city.population}`)
+  }
+}
+

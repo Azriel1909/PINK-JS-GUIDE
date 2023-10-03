@@ -45,3 +45,17 @@ for (let city of cities) {
   }
 }
 
+// * For ... In is a version of the for Loop that enables us to walk through object fields. For ... In iterates through all fields of the indicated object, placing the names of these fields (or keys) in the variable.
+
+console.log('-----------------------------')
+
+let myUser = {
+  name: 'Ximena',
+  surname: 'Pinkhat',
+  age: 40,
+  email: 'ximena@gmail.com'
+}
+
+for (let key in myUser) {
+  console.log(key)
+}

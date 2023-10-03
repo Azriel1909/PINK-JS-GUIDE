@@ -91,3 +91,14 @@ while (true){
 }
 
 console.log(`Exited the loop with a break - ${i}.`)
+
+// > The Continue Statement can be used in loops but no in the switch statement. It applies to the closest surrounding loop. It does not end the whole loop, but rather starts the next iteration of the loop.
+
+console.log('-----------------------------')
+
+for (let i = 0; i <= 19; i++){
+  if (i == 9) {
+    continue
+  }
+  console.log(i)
+}

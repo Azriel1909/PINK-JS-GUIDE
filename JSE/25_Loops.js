@@ -101,20 +101,16 @@ for (let i = 0; i < mySuperCoolNames.length; i++) {
   console.log(mySuperCoolNames[i])
 }
 
-/**
+let myValues = [1,2,3,4,5,6,7,8,9,10]
 
-let names = [];
-let isOver = false;
-while (!isOver) {
-    let name = prompt("Enter another name or press cancel.");
-    if (name != null) {
-     names.push(name);
-    } else {
-     isOver = true;
-    }
-}
-for (let i = 0; i < names.length; i++){
-    console.log(names[i]);
+for (let i = 0; i < myValues.length; i++) {
+  console.log(myValues[i])
 }
 
- */
+for (let i = myValues.length - 1; i >= 0; i--) {
+  console.log(myValues[i])
+}
+
+for (let i = 0; i < myValues.length; i+=2) {
+  console.log(myValues[i])
+}

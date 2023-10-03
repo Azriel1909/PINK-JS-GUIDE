@@ -59,3 +59,17 @@ let myUser = {
 for (let key in myUser) {
   console.log(key)
 }
+
+console.log('-----------------------------')
+
+for (let key in myUser) {
+  // ! We have to use Bracket Notation instead of Dot Notation
+  console.log(`${key}: ${myUser.key}`) // Undefined Value
+}
+
+console.log('-----------------------------')
+
+for (let key in myUser) {
+  // ! We use Bracket Notation to retrieve the values stored in the fields
+  console.log(`${key}: ${myUser[key]}`)
+}

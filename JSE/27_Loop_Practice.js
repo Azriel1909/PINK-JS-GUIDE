@@ -49,3 +49,7 @@ for (let number of numbers) {
     console.log(number)
   }
 }
+
+let movieName = prompt('Enter Movie Name.')
+let movieRating = prompt('Enter Movie Rating.')
+

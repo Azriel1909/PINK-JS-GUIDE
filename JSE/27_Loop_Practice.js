@@ -76,12 +76,16 @@ while (!noMoreMovies) {
 //   console.log(`Movie Title: ${movie.title}\nMovie Rating: ${movie.imdb}`)
 // }
 
+console.log('Movies that has been rating less than 7:')
 for (let movie of movies) {
   if (movie.imdb < 7) {
-    console.log('Movies that has been rating less than 7:')
     console.log(`Movie Title: ${movie.title},\nMovie Rating: ${movie.imdb}`)
-  } else if (movie.imdb >= 7) {
-    console.log('Movies that has been rating greater or equal to 7:')
+  }
+}
+
+console.log('Movies that has been rating greater or equal to 7:')
+for (let movie of movies) {
+  if (movie.imdb >= 7) {
     console.log(`Movie Title: ${movie.title},\nMovie Rating: ${movie.imdb}`)
   }
 }

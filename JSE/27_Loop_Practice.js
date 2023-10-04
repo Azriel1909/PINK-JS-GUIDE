@@ -56,22 +56,22 @@ let movies = []
 let noMoreMovies = false
 
 while (!noMoreMovies) {
-  let movieName = String(prompt('Enter Movie Name.'))
-  let movieRating = Number(prompt('Enter Movie Rating.'))
+  let movieName = prompt('Enter Movie Name.')
+  let movieRating = prompt('Enter Movie Rating.')
+
+  Number(movieRating)
   
-  if (movieName != null && movieRating != null) {
-    movies.push[{
+  if (movieName !== null && movieRating !== null) {
+    movies.push({
       title: movieName,
       imdb: movieRating 
-    }]
+    })
   } else {
     noMoreMovies = true
   }
 }
 
-console.log(`Data: ${movieName}, Data Type: ${typeof(movieName)}`)
-console.log(`Data: ${movieRating}, Data Type: ${typeof(movieRating)}`)
-
+// ! TESTING
 for (let movie of movies) {
-  console.log(movie)
+  console.log(`Movie Title: ${movie.title}\nMovie Rating: ${movie.imdb}`)
 }

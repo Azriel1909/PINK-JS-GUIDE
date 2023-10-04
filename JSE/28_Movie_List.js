@@ -7,7 +7,7 @@ while (!noMoreMovies) {
 
   Number(movieRating)
   
-  if (movieName !== null && movieRating !== null) {
+  if (movieName !== null || movieRating !== null) {
     movies.push({
       title: movieName,
       imdb: movieRating 

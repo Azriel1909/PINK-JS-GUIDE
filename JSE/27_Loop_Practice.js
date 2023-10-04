@@ -1,3 +1,4 @@
+// * Exercise 1
 let i = 10
 
 while (i <= 100) {
@@ -6,6 +7,8 @@ while (i <= 100) {
 }
 
 console.log('----------------')
+
+// * Exercise 2
 
 let j = 100
 
@@ -16,17 +19,21 @@ while (j >= 10) {
 
 console.log('----------------')
 
-// let max = prompt('Enter the maximum value')
-// let min = prompt('Enter the minimum value')
+// * Exercise 3
 
-// if (max > min) {
-//   while(max>=min){
-//     console.log(max)
-//     max-=10
-//   }
-// }
+let max = prompt('Enter the maximum value')
+let min = prompt('Enter the minimum value')
+
+if (max > min) {
+  while(max>=min){
+    console.log(max)
+    max-=10
+  }
+}
 
 console.log('----------------')
+
+// * Exercise 4
 
 let numbers = [21, 45, 100, 12, 11, 78, 61, 4, 39, 22];
 
@@ -52,6 +59,8 @@ for (let number of numbers) {
 
 console.log('----------------')
 
+// * Exercise 5
+
 let movies = []
 let noMoreMovies = false
 
@@ -61,7 +70,7 @@ while (!noMoreMovies) {
 
   Number(movieRating)
   
-  if (movieName !== null && movieRating !== null) {
+  if (movieName !== null || movieRating !== null) {
     movies.push({
       title: movieName,
       imdb: movieRating 
@@ -88,4 +97,21 @@ for (let movie of movies) {
   if (movie.imdb >= 7) {
     console.log(`Movie Title: ${movie.title},\nMovie Rating: ${movie.imdb}`)
   }
+}
+
+console.log('----------------')
+
+// * Exercise 6
+
+let vessel = {
+  LATITUDE: 40.07288,
+  LONGITUDE: 154.48535,
+  COURSE: 285.6,
+  SPEED: 14.0,
+  IMO: 9175717,
+  NAME: 'MARENO'
+}
+
+for (key in vessel) {
+  console.log(`${key} -> ${vessel[key]}`)
 }

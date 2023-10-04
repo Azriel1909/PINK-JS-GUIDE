@@ -50,6 +50,18 @@ for (let number of numbers) {
   }
 }
 
-let movieName = prompt('Enter Movie Name.')
-let movieRating = prompt('Enter Movie Rating.')
+console.log('----------------')
 
+let movies = []
+let noMoreMovies = false
+
+while (!noMoreMovies) {
+  let movieName = prompt('Enter Movie Name.')
+  let movieRating = prompt('Enter Movie Rating.')
+  if (movieName != null && movieRating != null) {
+    myObject = movies.push[{
+      title: movieName,
+      imdb: movieRating 
+    }]
+  }
+}

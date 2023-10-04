@@ -56,12 +56,21 @@ let movies = []
 let noMoreMovies = false
 
 while (!noMoreMovies) {
-  let movieName = prompt('Enter Movie Name.')
-  let movieRating = prompt('Enter Movie Rating.')
+  let movieName = String(prompt('Enter Movie Name.'))
+  let movieRating = Number(prompt('Enter Movie Rating.'))
+  console.log(`Data: ${movieName}, Data Type: ${typeof(movieName)}`)
+  console.log(`Data: ${movieRating}, Data Type: ${typeof(movieRating)}`)
+
   if (movieName != null && movieRating != null) {
-    myObject = movies.push[{
+    movies.push[{
       title: movieName,
       imdb: movieRating 
     }]
+  } else {
+    noMoreMovies = true
   }
+}
+
+for (let movie of movies) {
+  console.log(movie)
 }

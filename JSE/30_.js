@@ -24,17 +24,22 @@ while (!exitContactList) {
 
   switch(selectOption) {
     case 'A':
+    case 'a':
       alert(`Name: ${contacts[0].name}\nPhone: ${contacts[0].phone}\nEmail: ${contacts[0].email}`)
       break
     case 'B':
+    case 'b':
       let lastContact = contacts[contacts.length - 1]
       alert(`Name: ${lastContact.name}\nPhone: ${lastContact.phone}\nEmail: ${lastContact.email}`)
       break
     case 'C':
+    case 'c':
       for (let contact of contacts){
         alert(`Name: ${contact.name}\nPhone: ${contact.phone}\nEmail: ${contact.email}`)
       }
+      break
     case 'D':
+    case 'd':
       let enterName = prompt('Enter name:')
       let enterPhone = prompt('Enter phone:')
       let enterEmail = prompt('Enter email:')
@@ -46,6 +51,7 @@ while (!exitContactList) {
       alert(`Name: ${enterName}\nPhone: ${enterPhone}\nEmail: ${enterEmail}`)
       break
     case 'E':
+    case 'e': 
       exitContactList = true
       break
     default:

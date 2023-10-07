@@ -37,3 +37,20 @@ getMeanTemp()
 console.log(`Mena: ${meanTemp}`)
 
 // - Usually, functions are declared before they are called, mostly at the beginning of the code (it is a good practice, which increases the readability).
+
+console.log('----------------------------')
+
+let myName = 'Ximena'
+
+function showName(){
+  console.log(myName)
+}
+
+showName()
+
+console.log('----------------------------')
+
+showName()
+function showName(){
+  console.log(myName)
+}

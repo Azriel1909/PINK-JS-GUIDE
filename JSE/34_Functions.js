@@ -32,3 +32,37 @@ console.log(`Day 1 Mean: ${getMeanTemp(day1)}`)
 let day2 = [17, 16, 14, 12, 10, 10, 10, 11, 13, 14, 15, 17, 22, 27, 29, 29, 27, 26, 24, 21, 19, 18, 17, 16]
 
 console.log(`Day 2 Mean: ${getMeanTemp(day2)}`)
+
+// > Shadowing: the parameters are treated inside the function as local variables. And just like the local variables explicitly declared inside a function, they shadow the global variables of the same name (or more generally, variables from the outer scope).
+
+// Example 1
+
+function sumValues(value1, value2){
+  return value1 + value2
+}
+
+let value1 = 10, value2 = 20, value3 = 40, value4 = 80
+console.log(sumValues(value1,value2))
+console.log(sumValues(value2,value3))
+console.log(sumValues(value3,value4))
+
+// Example 2
+
+let a = 100, b = 200, c = 300
+
+
+function test(a){
+  let b = 10
+  console.log('Local')
+  console.log(a) // Parameter a
+  console.log(b) // Local Variable
+  console.log(c) // Global Variable
+}
+
+test(1)
+console.log('Global')
+console.log(a)
+console.log(b)
+console.log(c)
+
+

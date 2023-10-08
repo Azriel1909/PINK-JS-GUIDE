@@ -38,3 +38,16 @@ function factorial2(n){
 }
 
 console.log(`Factorial of ${num}: ${factorial2(num)}`)
+
+// > Functions at 1st-class members: Functions can be treated as any data, which can be stored in variables passed as arguments to other functions.
+
+// Example
+
+function showMySuperCoolMessage(message) {
+  console.log(`Message: ${message}`)
+}
+
+let storedMessage = showMySuperCoolMessage
+
+storedMessage('Hi! My name is Ximena')
+console.log(`Type: ${typeof(storedMessage)}`)

@@ -70,9 +70,24 @@ let a = justSayHi() // Assign the result of function call
 console.log(a)
 console.log(typeof(a))
 
-let b = justSayHi // Assign a function
+let b = justSayHi // ! Assign a function, reference to the function
 console.log(b)
 console.log(typeof(b))
 
+console.log('----------- Functions as first-class members')
+
+function add(a,b){
+  return a + b
+}
+
+function multiply(a, b) {
+  return a * b
+}
+
+function operation(someFunction, first, second){
+  return someFunction(first, second)
+}
 
 
+console.log(`Operation: ${operation(add, 10, 20)}`)
+console.log(`Operation: ${operation(multiply, 10, 20)}`)

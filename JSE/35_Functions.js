@@ -91,3 +91,28 @@ function operation(someFunction, first, second){
 
 console.log(`Operation: ${operation(add, 10, 20)}`)
 console.log(`Operation: ${operation(multiply, 10, 20)}`)
+
+// ? The operation function takes as its first argument the function (parameter func) and calls it with the other two arguments passed (parameters first and second).
+
+// > Functions expressions: To store a function in a variable or pass it as an argument to call a function, you do not necessarily have to declare it previously ans use its name.
+
+console.log('----------- Functions Expressions')
+
+function addition(a, b) {
+  return a + b
+}
+
+let myAddition = addition
+console.log(myAddition(10,20)) 
+console.log(addition(10,20))
+
+// ? We can shorten this notation and declare the function by sorting it in a variable
+
+console.log('----------- Functions Expressions')
+
+let mySecondAddition = function secondAddition(a,b){
+  return a + b
+}
+
+console.log(mySecondAddition(10,20))
+// console.log(secondAddition(10,20)) // ! Not defined

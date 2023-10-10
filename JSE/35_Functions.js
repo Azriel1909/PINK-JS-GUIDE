@@ -106,7 +106,7 @@ let myAddition = addition
 console.log(myAddition(10,20)) 
 console.log(addition(10,20))
 
-// ? We can shorten this notation and declare the function by sorting it in a variable
+// ? We can shorten this notation and declare the function by sorting it in a variable, this form of defining a function is called Function Expression, because the function has a name.
 
 console.log('----------- Functions Expressions')
 
@@ -116,3 +116,20 @@ let mySecondAddition = function secondAddition(a,b){
 
 console.log(mySecondAddition(10,20))
 // console.log(secondAddition(10,20)) // ! Not defined
+
+// > Anonymous Function: An unnamed function
+
+console.log('----------- Functions Expressions ans Anonymous Functions')
+
+function mySuperCoolOperation(someFunction, first, second){
+  return someFunction(first, second)
+}
+
+let myThirdAddition = function thirdAddition(a,b){
+  return a + b
+}
+
+console.log(mySuperCoolOperation(myThirdAddition, 10, 20))
+console.log(mySuperCoolOperation(function(a,b){
+  return a*b
+}, 10, 20))

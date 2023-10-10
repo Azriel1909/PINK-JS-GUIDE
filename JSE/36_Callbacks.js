@@ -1,6 +1,5 @@
 // > Callback Functions: Functions that are passed as arguments to other functions
 
-
 // - Synchronous Callbacks: It is executed in a strictly defined order resulting from where it is placed among the other instructions.
 
 // * Synchronous Execution: Subsequent instructions are executed in the order which they are place in the code.
@@ -29,7 +28,7 @@ outer(inner)
 console.log('---------------- Asynchronous Execution')
 
 let inner2 = function() {
-  console.log('Inner')
+  console.log('Inner 1')
 }
 
 let outer2 = function(callback) {
@@ -40,3 +39,29 @@ let outer2 = function(callback) {
 
 console.log('Test 1')
 outer2(inner2)
+console.log('Test 2')
+
+// > serTimeout and setInterval
+
+// - setTimeout: It is used when you want to cause a delay action. 
+
+// + setInterval: This action is also performed with delay, but periodically, so it is repeated at fixed intervals. It returns an ID during the call, which can be used to remove their timer used in it (and consequently to stop tje cyclical callback function call). 
+
+console.log('---------------- serTimeout and setInterval')
+
+let inner3 = function() {
+  console.log('Inner 1')
+}
+
+let outer3 = function(callback) {
+  console.log('Outer 1')
+  let timerId = setInterval(callback, 1000)
+  console.log('Outer 2')
+  setTimeout(function() {
+    clearInterval(timerId)
+  }, 5500)
+}
+
+console.log('Test 1')
+outer3(inner3)
+console.log('Test 2')

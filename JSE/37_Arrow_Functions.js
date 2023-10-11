@@ -32,4 +32,22 @@ function factorial(n) {
   return n > 1 ? n * factorial(n-1) : 1;
 }
 
-console.log(factorial(6))
+console.log(factorial(5))
+
+// ? The arrow function is mainly used for short functions, often anonymous, which can be presented as even more compact in this form.
+
+console.log('--------- Arrow Function: Arrays')
+
+let someCoolNames = ['Marco', 'Joel', 'Mert']
+
+function showNames(names) {
+  console.log(names)
+}
+
+someCoolNames.forEach(showNames)
+
+let showNames2 = (names) => {
+  console.log(names)
+}
+
+someCoolNames.forEach(showNames2)

@@ -65,3 +65,14 @@ let outer3 = function(callback) {
 console.log('Test 1')
 outer3(inner3)
 console.log('Test 2')
+
+
+// -- Asynchronous Functions calls are related to slightly different situations, they are determined by events not related to timers, but rather generated outside the program.
+
+// ? The Window Object has a method (or its own function) named addEventListener. This function allows you to register a certain action to be performed in response to a window-related event.
+
+// - The action to be taken is passed to the addEventListener as a callback function.
+
+// window.addEventListener('click', function() {
+//   console.log('clicked!')
+// })

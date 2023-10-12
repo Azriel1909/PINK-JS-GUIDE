@@ -42,3 +42,38 @@ let descendingOrder = (a,b) => {
 
 let descendingOrderNumbers = numbers.sort(descendingOrder)
 console.log(descendingOrderNumbers)
+
+console.log('----------------- Operations and Functions Statements')
+
+function myAdd(a,b){
+  if (!Number.isInteger(a) || !Number.isInteger(b)) {
+      return NaN
+  } else {
+    return a + b
+  }
+}
+
+function mySub(a,b){
+  if (!Number.isInteger(a) || !Number.isInteger(b)) {
+      return NaN
+  } else {
+    return a - b
+  }
+}
+
+function myMul(a,b){
+  if (!Number.isInteger(a) || !Number.isInteger(b)) {
+      return NaN
+  } else {
+    return a * b
+  }
+}
+
+console.log(myAdd(10,9))
+console.log(myAdd(10,9.9))
+
+console.log(mySub(10,9))
+console.log(mySub(10,9.1))
+
+console.log(myMul(10,9))
+console.log(myMul(10,9.1))

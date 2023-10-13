@@ -77,3 +77,26 @@ console.log(mySub(10,9.1))
 
 console.log(myMul(10,9))
 console.log(myMul(10,9.1))
+
+console.log('----------------- Operations and Arrow Functions')
+
+let myAdd2 = (a,b) => {
+  return !Number.isInteger(a) || !Number.isInteger(b) ? NaN : a + b
+}
+
+let mySub2 = (a,b) => {
+  return !Number.isInteger(a) || !Number.isInteger(b) ? NaN : a - b
+}
+
+let myMul2 = (a,b) => {
+  return !Number.isInteger(a) || !Number.isInteger(b) ? NaN : a * b
+}
+
+console.log(myAdd2(10,9))
+console.log(myAdd2(10,9.9))
+
+console.log(mySub2(10,9))
+console.log(mySub2(10,9.9))
+
+console.log(myMul2(10,9))
+console.log(myMul2(10,9.9))

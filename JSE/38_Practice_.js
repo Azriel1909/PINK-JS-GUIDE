@@ -107,6 +107,26 @@ let action = function(callback, num1, num2) {
   return callback(num1, num2)
 }
 
+// let action2 = (callback, num1, num2) => callback(num1, num2)
+
 console.log(action(myAdd2, 10, 9))
 console.log(action(mySub2, 10, 9))
 console.log(action(myMul2, 10, 9))
+
+
+console.log('----------------- setInterval, clearInterval and setTimeout')
+
+let intervalID
+
+function printNumbers() {
+  if (!intervalID) {
+    intervalID = setInterval(myNumbers, 2000)
+  }
+}
+
+function myNumbers() {
+  i = 1
+  console.log(i++)
+}
+
+printNumbers()

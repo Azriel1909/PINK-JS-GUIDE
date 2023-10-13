@@ -100,3 +100,13 @@ console.log(mySub2(10,9.9))
 
 console.log(myMul2(10,9))
 console.log(myMul2(10,9.9))
+
+console.log('----------------- Callback Function')
+
+let action = function(callback, num1, num2) {
+  return callback(num1, num2)
+}
+
+console.log(action(myAdd2, 10, 9))
+console.log(action(mySub2, 10, 9))
+console.log(action(myMul2, 10, 9))

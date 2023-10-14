@@ -146,12 +146,26 @@ console.log(myFib(7))
 
 console.log('----------------- For Loop Version')
 
-function iterateNumbers() {
-  for(let i = 0; i < 1; i++){
-    setInterval(function() {
-    console.log(i++)
-    }, 2000);
+// function iterateNumbers() {
+//   for(let i = 0; i < 1; i++) {
+//     setInterval(function() {
+//     console.log(i++)
+//     }, 2000);
+//   }
+// }
+
+console.log('----------------- For Loop Version: Fibonacci')
+
+function Fibonacci(n){
+  let term1 = 0
+  let term2 = 1
+  for(let i = 2; i <= n; i++) {
+    let term = term1
+    term1 = term2
+    term2 += term
   }
+  return term2
 }
 
-iterateNumbers()
+console.log(Fibonacci(4))
+console.log(Fibonacci(7))

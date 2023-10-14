@@ -116,9 +116,25 @@ console.log(action(myMul2, 10, 9))
 
 console.log('----------------- setInterval, clearInterval and setTimeout')
 
-let counter = 1
+// let counter = 1
 
-let intervalID = setInterval(function() {
-  console.log(counter++)
-}, 2000);
+// let intervalID = setInterval(function() {
+//   console.log(counter++)
+// }, 2000);
 
+console.log('----------------- Fibonacci Function')
+
+function myFibonacci(n) {
+  let mySuperCoolValue = 0
+  if (n != 0) {
+    if (n === 1) {
+      mySuperCoolValue = 1
+    } else {
+      mySuperCoolValue = myFibonacci(n-1) + myFibonacci(n-2)
+    }
+  }
+  return mySuperCoolValue
+}
+
+console.log(myFibonacci(4))
+console.log(myFibonacci(7))

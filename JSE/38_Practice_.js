@@ -138,3 +138,8 @@ function myFibonacci(n) {
 
 console.log(myFibonacci(4))
 console.log(myFibonacci(7))
+
+let myFib = (n) => n == 0 ? 0 : n == 1 ? 1 : myFib(n-1)+ myFib(n-2)
+
+console.log(myFib(4))
+console.log(myFib(7))

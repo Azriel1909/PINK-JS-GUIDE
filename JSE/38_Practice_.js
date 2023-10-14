@@ -143,3 +143,15 @@ let myFib = (n) => n == 0 ? 0 : n == 1 ? 1 : myFib(n-1)+ myFib(n-2)
 
 console.log(myFib(4))
 console.log(myFib(7))
+
+console.log('----------------- For Loop Version')
+
+function iterateNumbers() {
+  for(let i = 0; i < 1; i++){
+    setInterval(function() {
+    console.log(i++)
+    }, 2000);
+  }
+}
+
+iterateNumbers()

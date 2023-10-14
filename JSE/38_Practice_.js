@@ -116,17 +116,9 @@ console.log(action(myMul2, 10, 9))
 
 console.log('----------------- setInterval, clearInterval and setTimeout')
 
-let intervalID
+let counter = 1
 
-function printNumbers() {
-  if (!intervalID) {
-    intervalID = setInterval(myNumbers, 2000)
-  }
-}
+let intervalID = setInterval(function() {
+  console.log(counter++)
+}, 2000);
 
-function myNumbers() {
-  i = 1
-  console.log(i++)
-}
-
-printNumbers()

@@ -53,7 +53,22 @@ function showAllContacts(contacts) {
   }
 }
 
-console.log(showAllContacts(contacts))
+// - Show All Contacts Function
+
+function addNewContact(contacts, name, phone, email) {
+  if (contacts instanceof Array ) {
+    if (typeof(name) === 'string' && typeof(phone) === 'string' && typeof(email) === 'string') {
+      return contacts.push({
+        name: name,
+        phone: phone,
+        email: email
+      })
+    }
+  } else {
+    console.log('Invalid value.')
+    return null
+  }
+}
 
 // let exitContactList = false
 

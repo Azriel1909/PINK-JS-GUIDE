@@ -16,9 +16,9 @@ let contacts = [
   }
 ]
 
-
-
 // -- Challenge: Organize the code
+
+// - Show Contact Function
 
 // > Option A
 function showContact(contacts, index){
@@ -41,11 +41,19 @@ function showContact2(contacts, index){
     return null
   }
 }
-console.log('-----------------------')
-console.log(showContact(contacts, 1))
-console.log('-----------------------')
-console.log(showContact2(contacts, 1))
 
+// - Show All Contacts Function
+
+function showAllContacts(contacts) {
+  if (contacts instanceof Array) {
+    return contacts
+  } else {
+    console.log('Invalid value.')
+    return null
+  }
+}
+
+console.log(showAllContacts(contacts))
 
 // let exitContactList = false
 

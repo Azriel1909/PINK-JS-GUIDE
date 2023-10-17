@@ -16,16 +16,36 @@ let contacts = [
   }
 ]
 
+
+
 // -- Challenge: Organize the code
 
+// > Option A
 function showContact(contacts, index){
   // + Checking if the correct arguments are passed
   if (Array.isArray(contacts)) {
     return contacts[index]
+  } else {
+    console.log('Invalid value.')
+    return null
   }
 }
 
+// > Option B
+function showContact2(contacts, index){
+  // + Checking if the correct arguments are passed
+  if (contacts instanceof Array) {
+    return contacts[index]
+  } else {
+    console.log('Invalid value.')
+    return null
+  }
+}
+console.log('-----------------------')
 console.log(showContact(contacts, 1))
+console.log('-----------------------')
+console.log(showContact2(contacts, 1))
+
 
 // let exitContactList = false
 

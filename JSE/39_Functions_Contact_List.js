@@ -79,9 +79,7 @@ while (!exitContactList) {
       break
     case 'C':
     case 'c':
-      for (let contact of contacts){
-        alert(`Name: ${contact.name}\nPhone: ${contact.phone}\nEmail: ${contact.email}`)
-      }
+      showAllContacts(contacts)
       break
     case 'D':
     case 'd':

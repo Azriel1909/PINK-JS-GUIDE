@@ -88,6 +88,10 @@ while (!exitContactList) {
       let enterEmail = prompt('Enter email:')
       addNewContact(contacts, enterName, enterPhone, enterEmail)
       break
+    case 'S':
+      let selectedIndex = prompt('Enter index:')
+      showContact2(contacts, selectedIndex)
+      break
     case 'E':
     case 'e': 
       exitContactList = true

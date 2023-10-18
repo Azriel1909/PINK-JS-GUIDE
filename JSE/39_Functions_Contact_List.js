@@ -51,16 +51,13 @@ function showAllContacts(contacts) {
 
 function addNewContact(contacts, name, phone, email) {
   if (contacts instanceof Array ) {
-    if (typeof(name) === 'string' && typeof(phone) === 'string' && typeof(email) === 'string') {
+    if (name && phone && email) {
       return contacts.push({
         name: name,
         phone: phone,
         email: email
       })
     }
-  } else {
-    console.log('Invalid value.')
-    return null
   }
 }
 

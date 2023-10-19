@@ -33,7 +33,6 @@ function showContact2(contacts, index){
   // + Checking if the correct arguments are passed
   if (contacts instanceof Array && contacts[index]) {
     alert(`Name: ${contacts[index].name}\nPhone: ${contacts[index].phone}\nEmail: ${contacts[index].email}`)
-
   }
 }
 
@@ -61,47 +60,47 @@ function addNewContact(contacts, name, phone, email) {
   }
 }
 
-let exitContactList = false
+// let exitContactList = false
 
-while (!exitContactList) {
+// while (!exitContactList) {
   
-  let selectOption = prompt('Select an option:\nShow the first contact -> A\nShow the last contact -> B\nShow All contacts -> C\nAdd a new contact -> D\nSearch contact by index -> I\nExit -> E')
+//   let selectOption = prompt('Select an option:\nShow the first contact -> A\nShow the last contact -> B\nShow All contacts -> C\nAdd a new contact -> D\nSearch contact by index -> I\nExit -> E')
 
-  switch(selectOption) {
-    case 'A':
-    case 'a':
-      alert(`Name: ${contacts[0].name}\nPhone: ${contacts[0].phone}\nEmail: ${contacts[0].email}`)
-      break
-    case 'B':
-    case 'b':
-      let lastContact = contacts[contacts.length - 1]
-      alert(`Name: ${lastContact.name}\nPhone: ${lastContact.phone}\nEmail: ${lastContact.email}`)
-      break
-    case 'C':
-    case 'c':
-      showAllContacts(contacts)
-      break
-    case 'D':
-    case 'd':
-      let enterName = prompt('Enter name:')
-      let enterPhone = prompt('Enter phone:')
-      let enterEmail = prompt('Enter email:')
-      addNewContact(contacts, enterName, enterPhone, enterEmail)
-      break
-    case 'I':
-    case 'i':
-      let selectedIndex = prompt('Enter index:')
-      showContact2(contacts, selectedIndex)
-      break
-    case 'S':
-    case 's':
+//   switch(selectOption) {
+//     case 'A':
+//     case 'a':
+//       alert(`Name: ${contacts[0].name}\nPhone: ${contacts[0].phone}\nEmail: ${contacts[0].email}`)
+//       break
+//     case 'B':
+//     case 'b':
+//       let lastContact = contacts[contacts.length - 1]
+//       alert(`Name: ${lastContact.name}\nPhone: ${lastContact.phone}\nEmail: ${lastContact.email}`)
+//       break
+//     case 'C':
+//     case 'c':
+//       showAllContacts(contacts)
+//       break
+//     case 'D':
+//     case 'd':
+//       let enterName = prompt('Enter name:')
+//       let enterPhone = prompt('Enter phone:')
+//       let enterEmail = prompt('Enter email:')
+//       addNewContact(contacts, enterName, enterPhone, enterEmail)
+//       break
+//     case 'I':
+//     case 'i':
+//       let selectedIndex = prompt('Enter index:')
+//       showContact2(contacts, selectedIndex)
+//       break
+//     case 'S':
+//     case 's':
       
-      break
-    case 'E':
-    case 'e': 
-      exitContactList = true
-      break
-    default:
-      alert('Please enter a valid value!')
-  }
-}
+//       break
+//     case 'E':
+//     case 'e': 
+//       exitContactList = true
+//       break
+//     default:
+//       alert('Please enter a valid value!')
+//   }
+// }

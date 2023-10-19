@@ -65,7 +65,7 @@ let exitContactList = false
 
 while (!exitContactList) {
   
-  let selectOption = prompt('Select an option:\nShow the first contact -> A\nShow the last contact -> B\nShow All contacts -> C\nAdd a new contact -> D\nExit -> E')
+  let selectOption = prompt('Select an option:\nShow the first contact -> A\nShow the last contact -> B\nShow All contacts -> C\nAdd a new contact -> D\nSearch contact by index -> I\nExit -> E')
 
   switch(selectOption) {
     case 'A':
@@ -88,9 +88,14 @@ while (!exitContactList) {
       let enterEmail = prompt('Enter email:')
       addNewContact(contacts, enterName, enterPhone, enterEmail)
       break
-    case 'S':
+    case 'I':
+    case 'i':
       let selectedIndex = prompt('Enter index:')
       showContact2(contacts, selectedIndex)
+      break
+    case 'S':
+    case 's':
+      
       break
     case 'E':
     case 'e': 

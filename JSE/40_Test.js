@@ -1,17 +1,17 @@
 let contacts = [
   {
     name: "Maxwell Wright",
-    phone: "01917196495",
+    phone: "9",
     email: "Curabitur.egestas.nunc@nonummyac.co.uk" 
   },
   {
     name: "Raja Villarreal",
-    phone: "08663982895",
+    phone: "7",
     email: "posuere.vulputate@sed.com"
   },
   {
     name: "Helen Richards",
-    phone: "08001111",
+    phone: "19",
     email: "libero@convallis.edu"
   }
 ]
@@ -21,11 +21,12 @@ let contacts = [
 let orderByPhone = (a,b) => {
   return a.phone - b.phone
 }
+contacts.sort(orderByPhone)
 
-for (let n of contacts){
-  n = contacts.sort(orderByPhone)
-  console.log(`Phone: ${n.phone}`)
+for (let contact of contacts){
+  console.log(`Phone: ${contact.phone}`)
 }
+
 
 let orderByName = (a,b) => {
   return a < b ? -1:1

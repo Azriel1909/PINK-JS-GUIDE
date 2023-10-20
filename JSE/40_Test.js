@@ -32,7 +32,7 @@ let orderByName = (a,b) => {
 }
 
 
-function colectNames(contacts) {
+function collectedNames(contacts) {
   let names = []
   for (let contact of contacts) {
     names.push(contact.name)
@@ -40,7 +40,7 @@ function colectNames(contacts) {
   return names
 }
 
-let names  = colectNames(contacts)
+let names  = collectedNames(contacts)
 console.log(names.sort())
 
 

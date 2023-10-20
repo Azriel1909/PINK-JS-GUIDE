@@ -16,15 +16,22 @@ let contacts = [
   }
 ]
 
-// - Sort Function
+// - Sort Function by Phone Number
 
 let orderByPhone = (a,b) => {
   return a.phone - b.phone
 }
 
-let orderByName = (a,b) => {
-  return a.name - b.name
+for (let n of contacts){
+  n = contacts.sort(orderByPhone)
+  console.log(`Phone: ${n.phone}`)
 }
+
+let orderByName = (a,b) => {
+  return a < b ? -1:1
+}
+
+
 
 
 

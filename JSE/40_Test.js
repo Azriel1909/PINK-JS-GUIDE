@@ -22,15 +22,20 @@ let orderByPhone = (a,b) => {
   return a.phone - b.phone
 }
 
+// - End
+
 contacts.sort(orderByPhone)
 for (let contact of contacts){
   console.log(`Phone: ${contact.phone}`)
 }
 
-let orderByName = (a,b) => {
+// -- Sort Function by Name
+
+let orderByString = (a,b) => {
   return a < b ? -1:1
 }
 
+// -- End
 
 function collectedNames(contacts) {
   let names = []
@@ -41,9 +46,19 @@ function collectedNames(contacts) {
 }
 
 let names  = collectedNames(contacts)
-console.log(names.sort())
+console.log(names.sort(orderByString))
 
 
+function collectedEmails(contacts) {
+  let emails = []
+  for (let contact of contacts) {
+    emails.push(contact.email)
+  }
+  return emails
+}
+
+let emails = collectedEmails(contacts)
+console.log(emails.sort(orderByString))
 
 
 

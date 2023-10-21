@@ -18,13 +18,13 @@ let contacts = [
 
 // - Sort Function by Phone Number
 
-let orderByPhone = (a,b) => {
+let orderByNum = (a,b) => {
   return a.phone - b.phone
 }
 
 // - End
 
-contacts.sort(orderByPhone)
+contacts.sort(orderByNum)
 for (let contact of contacts){
   console.log(`Phone: ${contact.phone}`)
 }

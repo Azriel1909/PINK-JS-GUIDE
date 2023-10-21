@@ -16,8 +16,6 @@ let contacts = [
   }
 ]
 
-// -- Challenge: Organize the code
-
 // - Show Contact Function
 
 // > Option A
@@ -60,47 +58,77 @@ function addNewContact(contacts, name, phone, email) {
   }
 }
 
-// let exitContactList = false
+// * Sorted Functions
 
-// while (!exitContactList) {
+let orderByString = (a,b) => {
+  return a < b ? -1:1
+}
+
+// * End Sorted Functions
+
+// -- Data Collected Functions
+
+
+function collectedNames(contacts) {
+  let names = []
+  for (let contact of contacts) {
+    names.push(contact.name)
+  }
+  return names
+}
+
+// -- End Data Collected Functions
+
+// - Menu Structure
+
+let exitContactList = false
+
+while (!exitContactList) {
   
-//   let selectOption = prompt('Select an option:\nShow the first contact -> A\nShow the last contact -> B\nShow All contacts -> C\nAdd a new contact -> D\nSearch contact by index -> I\nExit -> E')
+  let selectOption = prompt('Select an option:\nShow the first contact -> A\nShow the last contact -> B\nShow All contacts -> C\nAdd a new contact -> D\nSearch contact by index -> I\nSort Contact by... -> S\nExit -> E')
 
-//   switch(selectOption) {
-//     case 'A':
-//     case 'a':
-//       alert(`Name: ${contacts[0].name}\nPhone: ${contacts[0].phone}\nEmail: ${contacts[0].email}`)
-//       break
-//     case 'B':
-//     case 'b':
-//       let lastContact = contacts[contacts.length - 1]
-//       alert(`Name: ${lastContact.name}\nPhone: ${lastContact.phone}\nEmail: ${lastContact.email}`)
-//       break
-//     case 'C':
-//     case 'c':
-//       showAllContacts(contacts)
-//       break
-//     case 'D':
-//     case 'd':
-//       let enterName = prompt('Enter name:')
-//       let enterPhone = prompt('Enter phone:')
-//       let enterEmail = prompt('Enter email:')
-//       addNewContact(contacts, enterName, enterPhone, enterEmail)
-//       break
-//     case 'I':
-//     case 'i':
-//       let selectedIndex = prompt('Enter index:')
-//       showContact2(contacts, selectedIndex)
-//       break
-//     case 'S':
-//     case 's':
-      
-//       break
-//     case 'E':
-//     case 'e': 
-//       exitContactList = true
-//       break
-//     default:
-//       alert('Please enter a valid value!')
-//   }
-// }
+  switch(selectOption) {
+    case 'A':
+    case 'a':
+      alert(`Name: ${contacts[0].name}\nPhone: ${contacts[0].phone}\nEmail: ${contacts[0].email}`)
+      break
+    case 'B':
+    case 'b':
+      let lastContact = contacts[contacts.length - 1]
+      alert(`Name: ${lastContact.name}\nPhone: ${lastContact.phone}\nEmail: ${lastContact.email}`)
+      break
+    case 'C':
+    case 'c':
+      showAllContacts(contacts)
+      break
+    case 'D':
+    case 'd':
+      let enterName = prompt('Enter name:')
+      let enterPhone = prompt('Enter phone:')
+      let enterEmail = prompt('Enter email:')
+      addNewContact(contacts, enterName, enterPhone, enterEmail)
+      break
+    case 'I':
+    case 'i':
+      let selectedIndex = prompt('Enter index:')
+      showContact2(contacts, selectedIndex)
+      break
+    case 'S':
+    case 's':
+      alert
+      let sortedBy = prompt('Select an option:\nSorted by name -> n\nSorted by phone number -> p\nSorted by email address -> e')
+      if(sortedBy === 'n' || sortedBy === 'N'){
+        let names = collectedNames(contacts)
+        alert(names.sort(orderByString))
+      }
+      break
+    case 'E':
+    case 'e': 
+      exitContactList = true
+      break
+    default:
+      alert('Please enter a valid value!')
+  }
+}
+
+// - End Menu Structure

@@ -60,6 +60,14 @@ function collectedEmails(contacts) {
 let emails = collectedEmails(contacts)
 console.log(emails.sort(orderByString))
 
+function collectedPhones(contacts) {
+  let phones = []
+  for (let contact of contacts) {
+    phones.push(contact.phone)
+  }
+  return phones
+}
 
-
+let phones = collectedPhones(contacts)
+console.log(phones.sort(orderByNum))
 

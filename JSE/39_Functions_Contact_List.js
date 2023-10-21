@@ -72,7 +72,6 @@ let orderByNum = (a,b) => {
 
 // -- Data Collected Functions
 
-
 function collectedNames(contacts) {
   let names = []
   for (let contact of contacts) {
@@ -87,6 +86,14 @@ function collectedEmails(contacts) {
     emails.push(contact.email)
   }
   return emails
+}
+
+function collectedPhones(contacts) {
+  let phones = []
+  for (let contact of contacts) {
+    phones.push(contact.phone)
+  }
+  return phones
 }
 
 // -- End Data Collected Functions
@@ -133,13 +140,13 @@ while (!exitContactList) {
         let names = collectedNames(contacts)
         alert(names.sort(orderByString))
       } else if (sortedBy === 'p' || sortedBy === 'P') {
-        contacts.sort(orderByNum)
-        for (let contact of contacts){
-          alert(`Phone: ${contact.phone}`)
-        }
+        let phones = collectedPhones(contacts)
+        alert(phones.sort(orderByNum))
       } else if (sortedBy === 'e' || sortedBy === 'E') {
         let emails = collectedEmails(contacts)
         alert(emails.sort(orderByString))
+      } else {
+        alert('Please enter a valid value!')
       }
       break
     case 'E':

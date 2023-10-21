@@ -81,6 +81,14 @@ function collectedNames(contacts) {
   return names
 }
 
+function collectedEmails(contacts) {
+  let emails = []
+  for (let contact of contacts) {
+    emails.push(contact.email)
+  }
+  return emails
+}
+
 // -- End Data Collected Functions
 
 // - Menu Structure
@@ -129,6 +137,9 @@ while (!exitContactList) {
         for (let contact of contacts){
           alert(`Phone: ${contact.phone}`)
         }
+      } else if (sortedBy === 'e' || sortedBy === 'E') {
+        let emails = collectedEmails(contacts)
+        alert(emails.sort(orderByString))
       }
       break
     case 'E':

@@ -64,6 +64,10 @@ let orderByString = (a,b) => {
   return a < b ? -1:1
 }
 
+let orderByNum = (a,b) => {
+  return a.phone - b.phone
+}
+
 // * End Sorted Functions
 
 // -- Data Collected Functions
@@ -120,6 +124,11 @@ while (!exitContactList) {
       if(sortedBy === 'n' || sortedBy === 'N'){
         let names = collectedNames(contacts)
         alert(names.sort(orderByString))
+      } else if (sortedBy === 'p' || sortedBy === 'P') {
+        contacts.sort(orderByNum)
+        for (let contact of contacts){
+          alert(`Phone: ${contact.phone}`)
+        }
       }
       break
     case 'E':

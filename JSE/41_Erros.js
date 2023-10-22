@@ -18,4 +18,17 @@ console.log(result)
 
 // * When JavaScript detects syntactic or semantic errors, it generates and throws specific objects containing information about the encountered error.
 
-// > Run Time Errors
+// > Run Time Errors: They appear while the program is running. We can also call them exceptions.
+
+// > Exception Handling: the correct line is executed, if the next one is incorrect, the program stops in that point.
+
+// - To handle exceptions generated in JavaScript (as in many other languages) we use the try...catch statement.
+
+try {
+  console.log('Ximena')
+  conole.log('Ximena')
+} catch (error) {
+  console.log(error.message)
+}
+
+// - To handle exceptions generated in JavaScript (as in many other languages) we use the try...catch statement

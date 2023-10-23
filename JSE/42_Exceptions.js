@@ -6,8 +6,13 @@
 //   console.log('true')
 // }
 
-// ! Reference Error similar to a semantic error.
+// ! Reference Error: Similar to a semantic error.
 
 // let a = b
 
 // fun()
+
+// ! typeError: Certain value is not of the expected type.
+
+const someConstValue = 9
+someConstValue = 10

@@ -32,3 +32,9 @@ try {
 }
 
 // - To handle exceptions generated in JavaScript (as in many other languages) we use the try...catch statement
+
+// > No all erroneous situations throw exceptions. Arithmetic Errors: 
+console.log(100/0)
+console.log(100 * '2')
+console.log(100 * 'abc')
+console.log(Math.pow('abc','abc'))

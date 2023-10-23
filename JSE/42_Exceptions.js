@@ -24,3 +24,12 @@
 
 // let testArray2 = Array(-1)
 // console.log(testArray2.length)
+
+// > Try Catch Statement: If we have a piece of code that can possibly be wrong, we can enclose it in the try clause. If there is an error ans an exception is thrown, the code inside the catch block of code will be executed
+
+try {
+  let a = b
+} catch (e) {
+  console.log(`Caught ${e}`)
+}
+console.log('We handled the exception!')

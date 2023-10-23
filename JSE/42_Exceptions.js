@@ -6,4 +6,8 @@
 //   console.log('true')
 // }
 
-// ! Reference Error
+// ! Reference Error similar to a semantic error.
+
+// let a = b
+
+// fun()

@@ -33,3 +33,5 @@ try {
   console.log(`Caught ${e}`)
 }
 console.log('We handled the exception!')
+
+// ! The try...catch will not work on a SyntaxError

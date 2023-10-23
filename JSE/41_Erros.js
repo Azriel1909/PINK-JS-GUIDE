@@ -39,3 +39,16 @@ console.log(100 * '2')
 console.log(100 * 'abc')
 console.log(Math.pow('abc','abc'))
 console.log(Math.pow(2,8))
+
+// > Limited Confidence
+
+let getX = prompt('Enter first number: ')
+let getY = prompt('Enter second number: ')
+let x = Number(getX)
+let y = Number(getY)
+
+if(Number.isFinite(x) && Number.isFinite(y) && y !== 0) {
+  alert(`Result: ${x/y}`)
+} else {
+  alert('Incorrect arguments.')
+}

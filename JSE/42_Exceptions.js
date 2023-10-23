@@ -6,7 +6,7 @@
 //   console.log('true')
 // }
 
-// ! Reference Error: Similar to a semantic error.
+// ! ReferenceError: Similar to a semantic error.
 
 // let a = b
 
@@ -14,5 +14,13 @@
 
 // ! typeError: Certain value is not of the expected type.
 
-const someConstValue = 9
-someConstValue = 10
+// const someConstValue = 9
+// someConstValue = 10
+
+// ! RangeError: When you pass a value to a function that is outside acceptable range.
+
+// let testArray1 = Array(10)
+// console.log(testArray1.length)
+
+// let testArray2 = Array(-1)
+// console.log(testArray2.length)

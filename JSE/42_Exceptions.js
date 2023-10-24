@@ -14,16 +14,24 @@
 
 // ! typeError: Certain value is not of the expected type.
 
-// const someConstValue = 9
-// someConstValue = 10
+try {
+  const someConstValue = 9
+  someConstValue = 10
+} catch (e) {
+  console.log(`Caught ${e}`)
+}
 
 // ! RangeError: When you pass a value to a function that is outside acceptable range.
 
 // let testArray1 = Array(10)
 // console.log(testArray1.length)
 
-// let testArray2 = Array(-1)
-// console.log(testArray2.length)
+try {
+  let testArray2 = Array(-1)
+  console.log(testArray2.length)
+} catch (e) {
+  console.log(`Caught ${e}`)
+}
 
 // > Try Catch Statement: If we have a piece of code that can possibly be wrong, we can enclose it in the try clause. If there is an error ans an exception is thrown, the code inside the catch block of code will be executed
 

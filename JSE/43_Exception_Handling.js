@@ -30,3 +30,32 @@ try {
 console.log(`Outside: ${b}`)
 
 // - The new value has been stored, without calling and error, in variable a. Then the content of the finally block is executed on the console. The program continues after leaving the finally block, displaying our variable again.
+
+// * Let's trying to refer a non-existent variable.
+
+console.log('Non-Existent')
+
+let c
+try {
+  // c = d
+  // console.log(`Try block: ${c}`)
+  // ! It interrupts the program in the try block!
+} finally {
+  console.log(`Finally block: ${c}`)
+}
+console.log(`Outside: ${c}`)
+
+
+// - The finally block can be used together with the catch block, as both of them are optional, but least one of then is required by the try block, and if none of them is present, a SyntaxError is thrown.
+
+console.log('Try + Catch + Finally')
+
+let e = 10 
+try {
+  e = f
+} catch (error) {
+  console.log(`Catch block: ${error}`)
+} finally {
+  console.log(`Finally block: ${e}`)
+}
+console.log(`Outside: ${e}`)

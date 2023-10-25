@@ -103,3 +103,25 @@ try {
   console.log(`Error: ${error}`)
 }
 console.log('end')
+
+function myFactorial(n) {
+  if ( n > 20) {
+    throw new RangeError('Max value 20.')
+  }
+  let result = 1
+  for(; n > 1; n--){
+    result = result * n
+  }
+  return result
+}
+
+console.log(myFactorial(3))
+console.log(myFactorial(5))
+console.log(myFactorial(8))
+console.log(myFactorial(20))
+
+try {
+  console.log(myFactorial(1000))
+} catch (error) {
+  console.log(`Error: ${error}`)
+}

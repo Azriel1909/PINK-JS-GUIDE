@@ -59,3 +59,16 @@ try {
   console.log(`Finally block: ${e}`)
 }
 console.log(`Outside: ${e}`)
+
+// ? Why should we use a Finally block? The Finally will be executed even when an error is thrown from the catch block.
+
+let g = 10
+try {
+  g = h
+} catch (error) {
+  // console.log(h)
+} finally {
+  console.log('Finally block!')
+}
+
+// > Nested Exceptions

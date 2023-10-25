@@ -87,3 +87,19 @@ try {
 } finally {
   console.log('Finally!')
 }
+
+console.log('------------ Throw Statement and custom errors')
+
+// ! An exception that we throw will cause the program to react in the same way as the original Js Exceptions (it will stop the execution).
+
+// console.log('Start')
+// throw 100 // It causes the program to stop.
+// console.log('end')
+
+console.log('Start')
+try {
+  throw 100
+} catch (error) {
+  console.log(`Error: ${error}`)
+}
+console.log('end')

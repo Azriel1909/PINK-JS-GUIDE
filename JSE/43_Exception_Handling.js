@@ -33,7 +33,7 @@ console.log(`Outside: ${b}`)
 
 // * Let's trying to refer a non-existent variable.
 
-console.log('Non-Existent')
+console.log('------------ Non-Existent')
 
 let c
 try {
@@ -48,7 +48,7 @@ console.log(`Outside: ${c}`)
 
 // - The finally block can be used together with the catch block, as both of them are optional, but least one of then is required by the try block, and if none of them is present, a SyntaxError is thrown.
 
-console.log('Try + Catch + Finally')
+console.log('------------ Try + Catch + Finally')
 
 let e = 10 
 try {
@@ -62,6 +62,8 @@ console.log(`Outside: ${e}`)
 
 // ? Why should we use a Finally block? The Finally will be executed even when an error is thrown from the catch block.
 
+console.log('------------ Finally Block')
+
 let g = 10
 try {
   g = h
@@ -71,4 +73,17 @@ try {
   console.log('Finally block!')
 }
 
-// > Nested Exceptions
+console.log('------------ Nested Exceptions')
+
+let i = 9
+try {
+  i = j
+} catch (error) {
+  try {
+    console.log(j)
+  } catch {
+    console.log('Second catch block!')
+  }
+} finally {
+  console.log('Finally!')
+}

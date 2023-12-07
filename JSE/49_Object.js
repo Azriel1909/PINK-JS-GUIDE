@@ -35,3 +35,28 @@ console.log(typeof(myArray))
 // > An object as a different type of array
 
 // ! An object can be treated as a special kind of array
+
+// * In computer science, arrays of this type are called association arrays (in data structures, they are called maps)
+
+// * We associate an element with a Key, a Key is a simple label (a name), which unique within an object and unambiguously defines the selected element. In objects we called their component elements "properties". Each property will consist of a key (or label) and a value.
+
+// ? The idea of objects comes from observing the surrounding reality. Practically everything in our environment, wether material or abstract is a collection of certain components.
+
+// ! Properties define a given object.
+
+// > The easiest way to create an object
+
+let sampleObject = {
+  id: 123456,
+  card: 1234,
+  name: 'Ximena Toledo',
+  isPresent: true,
+}
+
+sampleObject.card = sampleObject.card * 2
+console.log(sampleObject.id)
+console.log(sampleObject.card)
+console.log(sampleObject.name)
+console.log(sampleObject.isPresent)
+
+

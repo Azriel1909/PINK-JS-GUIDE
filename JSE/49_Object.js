@@ -32,3 +32,6 @@ console.log(myArray[2])
 console.log(myArray[5])
 console.log(typeof(myArray))
 
+// > An object as a different type of array
+
+// ! An object can be treated as a special kind of array

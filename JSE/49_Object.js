@@ -64,14 +64,25 @@ console.log(sampleObject.isPresent)
 
 console.log('---------------------------- Literal')
 
-// * We can create objects with Literal Notation (initializer notation)
+// * We can create objects with Literal Notation (initializer notation).
 
 let contact = {}
 
-// * We can add a Property with the Dot Notation
+// * We can add a Property with the Dot Notation.
 
 contact.tel = '123-123-1234'
 console.log(contact)
 console.log(`Content: ${contact}\nNumber: ${contact.tel}\nData type: ${typeof(contact)}`)
+
+// * In Literal Notation, the properties are separated by commas. A colon is used to separate a property name (key) from a value.
+
+let myContactList = {
+  tel: '123-456-7890',
+  email: 'pinkhat@gmail.com'
+}
+console.log(myContactList)
+console.log(myContactList.tel)
+console.log(myContactList.email)
+
 
 

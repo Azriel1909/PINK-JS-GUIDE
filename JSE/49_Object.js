@@ -94,3 +94,9 @@ let myContact1 = {
 
 console.log(typeof(console)) // Object
 console.log(typeof(console.log)) // Function
+
+// > Detecting Objects
+
+// * The JavaScript engine uses a Garbage Collector, which decides for us whether the objects are still needed, and possibly removes them.
+
+

@@ -76,13 +76,21 @@ console.log(`Content: ${contact}\nNumber: ${contact.tel}\nData type: ${typeof(co
 
 // * In Literal Notation, the properties are separated by commas. A colon is used to separate a property name (key) from a value.
 
-let myContactList = {
+let myContact = {
   tel: '123-456-7890',
   email: 'pinkhat@gmail.com'
 }
-console.log(myContactList)
-console.log(myContactList.tel)
-console.log(myContactList.email)
+console.log(myContact)
+console.log(myContact.tel)
+console.log(myContact.email)
 
+// ? Note: The key is a string. The key can be enclosed in quotation marks, although this is not necessary because JavaScript automatically interprets it as a string.
 
+let myContact1 = {
+  'tel num': '123-456-7890',
+  // ! If you need a multi-word name, it is better to use Camel Case Notation 
+  email: 'pinkhat@gmail.com'
+}
 
+console.log(typeof(console)) // Object
+console.log(typeof(console.log)) // Function

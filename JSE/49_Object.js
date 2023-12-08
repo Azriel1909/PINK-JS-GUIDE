@@ -60,3 +60,18 @@ console.log(sampleObject.name)
 console.log(sampleObject.isPresent)
 
 
+// > Literals
+
+console.log('---------------------------- Literal')
+
+// * We can create objects with Literal Notation (initializer notation)
+
+let contact = {}
+
+// * We can add a Property with the Dot Notation
+
+contact.tel = '123-123-1234'
+console.log(contact)
+console.log(`Content: ${contact}\nNumber: ${contact.tel}\nData type: ${typeof(contact)}`)
+
+

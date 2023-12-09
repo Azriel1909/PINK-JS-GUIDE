@@ -7,3 +7,28 @@ console.log(typeof(false))
 let myFloat = 9.5
 myFloat = myFloat/2
 console.log(`Result: ${myFloat}\nData type: ${typeof(myFloat)}`)
+
+// -- Characteristics of Primitive Data Types
+
+// * They are not complex
+// * They are always one specific
+// * There is a simple value in a variable
+
+// ! Arrays in JavaScript are also objects, even functions are objects. Everything except a primitive type is an object.
+
+// > Types
+
+let mySuperCoolValue = 9
+let b = true
+let myStr = 'Ximena Toledo'
+let myArr = [1,2,3,4,5,6,7,8,9,0]
+let myObj = {
+  x: 19,
+  y: 29
+}
+
+let myFunction = function(arg){
+  console.log(arg)
+}
+
+myFunction(123)

@@ -99,4 +99,3 @@ console.log(typeof(console.log)) // Function
 
 // * The JavaScript engine uses a Garbage Collector, which decides for us whether the objects are still needed, and possibly removes them.
 
-

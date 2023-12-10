@@ -69,3 +69,8 @@ let point = {
   }
 }
 
+console.log('---------------------------')
+
+console.log(point.x)
+point.moveHorizontally(90)
+console.log(point.x)

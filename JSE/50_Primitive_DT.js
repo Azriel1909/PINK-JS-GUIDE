@@ -53,3 +53,19 @@ test.sayHi('Hello')
 // > Nested properties
 
 // * If the property of an object is another object that has properties itself, then we are dealing with nested properties.
+
+// > A function as a property type - a method
+
+// ? A function that is the property of an object will be called a method. Methods can be treated as their characteristic behavior, or ways of changing the state of an object.
+
+let point = {
+  x: 0,
+  y: 0,
+  moveHorizontally: function(distance){
+    this.x = this.x + distance
+  },
+  moveVertically: function(distance){
+    this.y = this.y + distance 
+  }
+}
+

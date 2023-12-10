@@ -49,3 +49,7 @@ let test = {
 }
 
 test.sayHi('Hello')
+
+// > Nested properties
+
+// * If the property of an object is another object that has properties itself, then we are dealing with nested properties.

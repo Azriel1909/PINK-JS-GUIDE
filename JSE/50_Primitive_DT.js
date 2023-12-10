@@ -32,3 +32,20 @@ let myFunction = function(arg){
 }
 
 myFunction(123)
+
+// > OBjects properties
+
+let test = {
+  id: 19,
+  single: false,
+  name: 'Ximena Toledo',
+  contact: {
+    x: 'ximena@gmail.com',
+    y: 123
+  },
+  sayHi: function(arg) {
+    console.log(arg)
+  }
+}
+
+test.sayHi('Hello')

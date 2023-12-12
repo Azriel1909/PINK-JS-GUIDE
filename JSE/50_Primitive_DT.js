@@ -48,6 +48,8 @@ let test = {
   }
 }
 
+console.log('---------------------------')
+
 test.sayHi('Hello')
 
 // > Nested properties
@@ -74,3 +76,20 @@ console.log('---------------------------')
 console.log(point.x)
 point.moveHorizontally(90)
 console.log(point.x)
+
+// ? This: it indicates the object we are in.
+
+// > Adding a new property: Objects can change dynamically during their lifetime.
+
+let myContact = {
+  phone: '123-456-7890',
+  email: 'asya@gmail.com'
+}
+
+myContact.firstName = 'Asya'
+myContact.lastName = 'Yilmaz'
+
+console.log('---------------------------')
+
+console.log(`First Name: ${myContact.firstName}\nLast Name: ${myContact.lastName}\nPhone: ${myContact.phone}\nEmail: ${myContact.email}`)
+

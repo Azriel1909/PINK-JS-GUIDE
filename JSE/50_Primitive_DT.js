@@ -93,3 +93,13 @@ console.log('---------------------------')
 
 console.log(`First Name: ${myContact.firstName}\nLast Name: ${myContact.lastName}\nPhone: ${myContact.phone}\nEmail: ${myContact.email}`)
 
+// ! A non-existing property of an object is treated as undefined and not as null.
+
+console.log(myContact.name) // Undefined
+
+// > Modifying a property: By default there are no restrictions on modifying the values placed in object properties.
+
+myContact.email = ['asya01@gmail.com', 'yilmax.asya@gmail.com']
+
+console.log('---------------------------')
+console.log(`Email: ${myContact.email}`)

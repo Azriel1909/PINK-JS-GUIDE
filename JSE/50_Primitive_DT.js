@@ -121,3 +121,4 @@ console.log(`Personal email: ${myContact.email.personal}\tWork email: ${myContac
 
 delete myContact.email.personal
 console.log(myContact.email)
+console.log(myContact.email.personal)

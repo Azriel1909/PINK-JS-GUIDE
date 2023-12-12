@@ -116,3 +116,8 @@ myContact.email = {
 }
 
 console.log(`Personal email: ${myContact.email.personal}\tWork email: ${myContact.email.work}`)
+
+// > Delinting a property: We use it to indicate the property that is to disappear the object.
+
+delete myContact.email.personal
+console.log(myContact.email)

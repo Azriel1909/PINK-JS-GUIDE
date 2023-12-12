@@ -101,5 +101,18 @@ console.log(myContact.name) // Undefined
 
 myContact.email = ['asya01@gmail.com', 'yilmax.asya@gmail.com']
 
+// ! If we know that one of these address is private and the other is for business purpose, it would be more logical to save them as an object.
+
 console.log('---------------------------')
 console.log(`Email: ${myContact.email}`)
+
+// > Overwriting the property
+
+console.log('---------------------------')
+
+myContact.email = {
+  personal: 'asya01@gmail.com',
+  work: 'yilmax.asya@gmail.com'
+}
+
+console.log(`Personal email: ${myContact.email.personal}\tWork email: ${myContact.email.work}`)

@@ -11,5 +11,5 @@ myContact.email = {
 }
 
 
-myContact.phone === myContact['phone']
-myContact.email.work === myContact['email']['work']
+console.log(myContact.phone === myContact['phone'])
+console.log(myContact.email.work === myContact['email']['work'])

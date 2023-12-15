@@ -13,3 +13,9 @@ myContact.email = {
 
 console.log(myContact.phone === myContact['phone'])
 console.log(myContact.email.work === myContact['email']['work'])
+
+// > Multi-word Keys: This approach is slightly less intuitive that dot notation. but there are cases where it is only way out.
+
+myContact['first name'] = 'Asya'
+// myContact.first name = 'Asya' // SyntaxError
+// myContact.'first name' = 'Asya' // SyntaxError

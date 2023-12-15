@@ -41,5 +41,5 @@ console.log('--------------------------------')
 
 for(i=1; i<=2; i++){
   let key = 'email_' + i
-  console.log(`${key}: ${myContact[key]}`)
+  console.log(`${key}: ${myContact2[key]}`)
 }

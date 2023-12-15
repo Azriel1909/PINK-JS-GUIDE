@@ -22,6 +22,8 @@ myContact['first name'] = 'Asya'
 
 // > Computed Key: Bracket notation is more often used when operating on computed keys. It may happen that the property key we want to refer to will be calculated during the operation of the program
 
+console.log('--------------------------------')
+
 let myContact2 = {
   email_1: 'asya01@gmail.com',
   email_2: 'yilmax@gmail.com'
@@ -31,4 +33,13 @@ for (i=1; i<=2; i++){
   let key =  'email_'+ i
   console.log(key)
   console.log(myContact2[key])
+}
+
+// ! JavaScript automatically converts the number to string here.
+
+console.log('--------------------------------')
+
+for(i=1; i<=2; i++){
+  let key = 'email_' + i
+  console.log(`${key}: ${myContact[key]}`)
 }

@@ -15,3 +15,9 @@ if (!myContact.notes){
   myContact.notes = 'Something really important'
   console.log(myContact.notes)
 }
+
+// > Existence test
+
+if("notes" in myContact) { // if true
+  console.log(myContact.notes);
+}

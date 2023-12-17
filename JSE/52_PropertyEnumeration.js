@@ -21,3 +21,9 @@ if (!myContact.notes){
 if("notes" in myContact) { // if true
   console.log(myContact.notes);
 }
+
+// > Enumeration
+
+for(x in myContact) {
+  console.log(x);
+}

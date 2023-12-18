@@ -4,7 +4,8 @@
 
 let myContact = {
   phone: '123-456-7890',
-  email: 'asya@gmail.com'
+  email: 'asya@gmail.com',
+  name: 'Asya'
 }
 
 if (myContact.notes){

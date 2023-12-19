@@ -9,9 +9,23 @@ let myContact = {
   id: 1
 }
 
-if (myContact.notes){
-  console.log(myContact.notes)
+if (myContact.phone){
+  console.log(`Result: ${myContact.phone}`)
 }
+
+console.log('--------------------------')
+
+if (myContact.notes){ // ! No Value
+  console.log(`Result: ${myContact.notes}`)
+}
+
+console.log('--------------------------')
+
+if (!myContact.notes){ // ! Undefined
+  console.log(`Result: ${myContact.notes}`)
+}
+
+console.log('--------------------------')
 
 if (!myContact.notes){
   myContact.notes = 'Something really important'

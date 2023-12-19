@@ -27,12 +27,23 @@ if (!myContact.notes){ // ! Undefined
 
 console.log('--------------------------')
 
+// ? If the field does not exist, it will be automatically created
+
 if (!myContact.notes){
-  myContact.notes = 'Something really important'
+  myContact.notes = 'A really important note!'
   console.log(myContact.notes)
 }
 
-// > Existence test
+console.log('--------------------------')
+
+// > Existence test: It is a good practice to test if a given object field exists before trying to read it.
+
+// ! The ease of Dot Notation often results in us taking shortcuts, assuming that an object should look a certain way. This can have falta consequences, especially for nested objects.
+
+console.log(`Testing Result: ${myContact.notes}`)
+
+console.log('--------------------------')
+
 
 if("notes" in myContact) { // if true
   console.log(myContact.notes);

@@ -69,4 +69,7 @@ Object.assign(pointC,pointA)
 console.log(`${pointC.x}, ${pointC.y}`) // ! Copy properties into the new object
 console.log(pointB === pointA) // ? True
 console.log(pointB === pointC) // ? False
+console.log(pointA === pointC) // ? False
+
+// ! The source objects, that is, the ones from which we'll copy the properties can be many.
 

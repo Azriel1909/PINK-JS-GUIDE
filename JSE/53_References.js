@@ -41,3 +41,13 @@ let point3 = point1
 console.log(point1 === point3)
 
 // ? Here is a reference to the same object
+
+// ? How to check it? Let's do an experiment
+
+point3.z = 90
+console.log(point3.z)
+console.log(point1.z)
+
+// - Using the reference stores in point3, we modify the object by adding a z field to it. Th change is visible in the point3 and point1 variables, because they contain references to the same object.
+
+// ! JavaScript does not have ready-to-use deep comparison

@@ -64,3 +64,28 @@ console.log('--------------------------')
 // * In a simpler form
 
 myContact && myContact.email && console.log(myContact.email.private)
+
+// > Existence Test Using "in": If the field exists, it is returned true (even if the field has no set value)
+
+console.log('--------------------------')
+
+if('notes' in myContact){
+  console.log(myContact.notes)
+}
+
+// ! The property names is a string.
+
+// > Enumeration 'for ... in': It allows us to enumerate all the fields of an object. Using 'for ... in' we can go through the properties of an object (we go through the names of the properties - Keys).
+
+console.log('--------------------------')
+
+let specialContact = {
+  phone: '123-456-789',
+  email: 'elbicho@gmail.com',
+  id: '1234'
+}
+
+for (x in specialContact){
+  console.log(x)
+  // ! Print Property Name
+}

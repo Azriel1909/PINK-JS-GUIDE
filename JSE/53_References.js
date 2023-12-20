@@ -20,3 +20,24 @@ contact.email = 'xtoledo@gmail.com'
 console.log(`Email: ${contact.email}`)
 delete contact.email
 console.log(`Email: ${contact.email}`)
+
+// > The Const Object ca be modified
+
+// - According to Js documentation "a constant cannot change through re-assignment and a constant cannot be re-declared". In the case of simple data types seen ideally. In the case of complex data types (arrays and objects) variables and constants do not contain the entire object. They only contain the object reference as an address indicating where the object is really stored.
+
+// ? The const keyword protects only the reference, the address, from change. We cannot change the reference. However, changes inside an object adding a new property, changing a value, etc. do not affect the reference.
+
+// > Comparing Objects
+
+console.log('-------------- Comparing Objects')
+
+var point1 = {x: 10, y:20}
+var point2 = {x: 10, y:20}
+console.log(point1 === point2)
+
+// - The result is false. Although they have identical properties of the same values, this does not change the fact that they are different objects
+
+let point3 = point1
+console.log(point1 === point3)
+
+// ? Here is a reference to the same object

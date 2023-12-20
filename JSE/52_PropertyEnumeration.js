@@ -49,10 +49,12 @@ myContact.email = {
   work: 'yilmax.asya@gmail.com'
 }
 
-console.log('--------------------------')
+console.log(`Testing Result: ${myContact.email.private}`)
 
-console.log(`Testing Result: ${myContact.notes.work}`)
+console.log('--------------------------')
 
 // * Checking the calling object and required field exists
 
-if (myContact&& myContact.email)
+if (myContact&& myContact.email) {
+  console.log('hi')
+}

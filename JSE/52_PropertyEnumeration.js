@@ -44,13 +44,15 @@ console.log(`Testing Result: ${myContact.notes}`)
 
 console.log('--------------------------')
 
-
-if("notes" in myContact) { // if true
-  console.log(myContact.notes);
+myContact.email = {
+  personal: 'asya01@gmail.com',
+  work: 'yilmax.asya@gmail.com'
 }
 
-// > Enumeration
+console.log('--------------------------')
 
-for(x in myContact) {
-  console.log(x);
-}
+console.log(`Testing Result: ${myContact.notes.work}`)
+
+// * Checking the calling object and required field exists
+
+if (myContact&& myContact.email)

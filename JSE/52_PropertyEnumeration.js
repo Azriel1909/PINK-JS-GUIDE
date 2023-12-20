@@ -89,3 +89,19 @@ for (x in specialContact){
   console.log(x)
   // ! Print Property Name
 }
+
+// ? The names of the properties (keys) of the object are assigned to the variable x in turn.
+
+// - To get to the value of a given field, we use Bracket Notation (the key is dynamically calculated and placed in the variable)
+
+console.log('--------------------------')
+
+for(x in myContact){
+  console.log(myContact[x])
+}
+
+console.log('--------------------------')
+
+for(x in myContact){
+  console.log(`${x} : ${myContact[x]}`)
+}

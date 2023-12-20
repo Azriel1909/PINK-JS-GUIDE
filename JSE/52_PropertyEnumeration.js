@@ -105,3 +105,10 @@ console.log('--------------------------')
 for(x in myContact){
   console.log(`${x} : ${myContact[x]}`)
 }
+
+// > The 'object.keys' method: Another way to retrieve the names of all the object properties is to use the object.keys method. This method returns an array of properties names, which we can use in any way we want.
+
+console.log('--------------------------')
+let myKeys = Object.keys(myContact)
+
+console.log(myKeys)

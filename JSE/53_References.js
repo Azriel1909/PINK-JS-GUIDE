@@ -51,3 +51,22 @@ console.log(point1.z)
 // - Using the reference stores in point3, we modify the object by adding a z field to it. Th change is visible in the point3 and point1 variables, because they contain references to the same object.
 
 // ! JavaScript does not have ready-to-use deep comparison
+
+// > Copying objects
+
+// ? What if we want to copy the contents og the object? We would have to create a new target object, save the reference to a new variable, and copy the properties of the source object to the target one by one.
+
+// - We can use the Object.assign method to take the object as the first argument, to which the fields form other objects will be copied. The second and subsequence arguments will be used as the source of the properties to be copied. If a property with the same name as the source object already exists in the target object, it will be overwritten with a new value (the target is overwritten with the source).
+
+console.log('-------------- Copying Objects')
+
+let pointA = {x: 10, y: 20}
+let pointB = pointA // ! Copy reference
+let pointC = {}
+
+Object.assign(pointC,pointA)
+
+console.log(`${pointC.x}, ${pointC.y}`) // ! Copy properties into the new object
+console.log(pointB === pointA) // ? True
+console.log(pointB === pointC) // ? False
+

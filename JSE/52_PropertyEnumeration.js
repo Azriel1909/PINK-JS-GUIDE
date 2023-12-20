@@ -38,9 +38,9 @@ console.log('--------------------------')
 
 // > Existence test: It is a good practice to test if a given object field exists before trying to read it.
 
-// ! The ease of Dot Notation often results in us taking shortcuts, assuming that an object should look a certain way. This can have falta consequences, especially for nested objects.
-
 console.log(`Testing Result: ${myContact.notes}`)
+
+// ! The ease of Dot Notation often results in us taking shortcuts, assuming that an object should look a certain way. This can have fatal consequences, especially for nested objects.
 
 console.log('--------------------------')
 
@@ -49,12 +49,18 @@ myContact.email = {
   work: 'yilmax.asya@gmail.com'
 }
 
-console.log(`Testing Result: ${myContact.email.private}`)
+console.log(`Testing Result: ${myContact.email.private}`) // Exception!
 
 console.log('--------------------------')
 
 // * Checking the calling object and required field exists
 
-if (myContact&& myContact.email) {
-  console.log('hi')
+if (myContact && myContact.email) {
+  console.log(myContact.email.private)
 }
+
+console.log('--------------------------')
+
+// * In a simpler form
+
+myContact && myContact.email && console.log(myContact.email.private)

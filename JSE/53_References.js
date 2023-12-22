@@ -77,7 +77,7 @@ console.log(pointA === pointC) // ? False
 
 let pointD = {}
 Object.assign(pointD, pointA, {z:100})
-console.log(`x: ${pointD.x}\ny: ${pointD.y}\nz: ${pointD.z}`)
+console.log(`--------------\nx: ${pointD.x}\ny: ${pointD.y}\nz: ${pointD.z}`)
 
 // ? How overwriting properties work
 
@@ -85,10 +85,42 @@ console.log(`x: ${pointD.x}\ny: ${pointD.y}\nz: ${pointD.z}`)
 
 var pointE = {}
 Object.assign(pointE, pointD, {z: 200, color: 'pink'})
-console.log(`x: ${pointE.x}\ny: ${pointE.y}\nz: ${pointE.z}`)
+console.log(`--------------\nx: ${pointE.x}\ny: ${pointE.y}\nz: ${pointE.z}`)
 
 // - The alternative to Object.assign is to use the 'spread operator'
 
 let pointF = {x:10, y:20}
 let pointG = {...pointF}
 let pointH = {...pointF, z: 100}
+
+console.log(`--------------\nx: ${pointG.x}\ny: ${pointG.y}\nz: ${pointG.z}`)
+console.log(`--------------\nx: ${pointH.x}\ny: ${pointH.y}\nz: ${pointH.z}`)
+
+// ! The operation can be performed on many objects at the same time.
+
+let pointI = {...pointH, ...{z:200, color:'pink'}}
+console.log(`--------------\nx: ${pointI.x}\ny: ${pointI.y}\nz: ${pointI.z}\nColor: ${pointI.color}`)
+
+//let pointI = {...pointH, z: 200, color: 'pink'} // - We produce the same effect
+
+// > Sallow Cloning Vs. Deep Cloning
+
+// - Shallow Cloning does not copy nested objects, operating only in the references.
+
+let circle1 = {
+  radius: 100,
+  center: {
+    x:100,
+    y:100
+  }
+}
+
+let circle2 = {...circle1} // ! Shallow copied (copies only the reference)
+console.log(`---------\nr: ${circle1.radius}\nx: ${circle1.center.x}`)
+circle1.radius = 200
+circle1.center.x = 200
+console.log(`---------\nr: ${circle1.radius}\nx: ${circle1.center.x}`)
+console.log(`---------\nr: ${circle2.radius}\nx: ${circle2.center.x}`)
+console.log(`circle1 === circle2 ${circle1 === circle2}`)
+console.log(`circle1.center === circle2.center ${circle1.center === circle2.center}`)
+

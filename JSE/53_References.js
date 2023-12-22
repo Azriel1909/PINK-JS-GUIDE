@@ -73,3 +73,22 @@ console.log(pointA === pointC) // ? False
 
 // ! The source objects, that is, the ones from which we'll copy the properties can be many.
 
+// ! The order is important for the same property names in several source objects
+
+let pointD = {}
+Object.assign(pointD, pointA, {z:100})
+console.log(`x: ${pointD.x}\ny: ${pointD.y}\nz: ${pointD.z}`)
+
+// ? How overwriting properties work
+
+// ! The value from the last, most-right-handed argument 'wins'
+
+var pointE = {}
+Object.assign(pointE, pointD, {z: 200, color: 'pink'})
+console.log(`x: ${pointE.x}\ny: ${pointE.y}\nz: ${pointE.z}`)
+
+// - The alternative to Object.assign is to use the 'spread operator'
+
+let pointF = {x:10, y:20}
+let pointG = {...pointF}
+let pointH = {...pointF, z: 100}

@@ -124,3 +124,32 @@ console.log(`---------\nr: ${circle2.radius}\nx: ${circle2.center.x}`)
 console.log(`circle1 === circle2 ${circle1 === circle2}`)
 console.log(`circle1.center === circle2.center ${circle1.center === circle2.center}`)
 
+// > Deep Cloning
+
+let deepCloning = function(obj) {
+  let newObj = {...obj}
+  for(property in newObj) {
+    if(typeof newObj[property] === 'object'){
+      newObj[property] = deepCloning(newObj[property])
+    }
+  }
+  return newObj
+}
+
+let test = {
+  x:10,
+  y:50,
+  z: {
+    z1: 100,
+    z2: 200,
+    z3: {
+      za: 1.5,
+      zb: 1.6
+    }
+  }
+}
+
+
+let testCloned = deepCloning(test)
+console.log(test)
+console.log(testCloned)

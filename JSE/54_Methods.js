@@ -4,7 +4,11 @@ let circle = {
       x: 0,
       y:0
   },
-  getType: function() {
+  getType () {
       return "circle";
   }
 };
+
+console.log(circle.getType());
+console.log(circle["getType"]() );
+

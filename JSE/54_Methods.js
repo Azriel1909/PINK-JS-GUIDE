@@ -26,3 +26,19 @@ console.log(circle.getType())
 // ! The method can also be called up using the Bracket Notation
 
 console.log(circle['getType']())
+
+// > The 'this' keyword: The easiest way to access the object is by refer it to its name
+
+let mySuperCircle = {
+  radius: 100,
+  center: {
+    x: 0,
+    y: 0
+  },
+  getType() {
+    return (typeof mySuperCircle.radius === 'number') ?
+    'Circle' : 'unknown'
+  }
+}
+
+console.log(mySuperCircle.getType())

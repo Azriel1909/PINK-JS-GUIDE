@@ -42,3 +42,35 @@ let mySuperCircle = {
 }
 
 console.log(mySuperCircle.getType())
+
+// ? Where is the flaw?
+
+console.log('------------------- Identifying the flaw')
+
+let figure = {...mySuperCircle}
+delete mySuperCircle.radius
+console.log(figure.radius)
+console.log(figure.getType())
+
+// - The problem is that when the object is copied, deleting the field 'radius' does not affect the field with the same name in the new 'figure' object. So we would expect 'figure.getType' to return 'circle', but instead we get 'unknown'.
+
+// ? What is the solution? 'this' will always contain a reference to the object we are in.
+
+let mySuperCircle2 = {
+  radius: 100,
+  center: {
+    x: 0,
+    y: 0
+  },
+  getType() {
+    return typeof this.radius === 'number' ? 'Circle' : 'Unknown'
+  }
+}
+
+console.log('------------------- Using "This" keyword')
+
+console.log(mySuperCircle2.getType())
+let mySuperFigure = {...mySuperCircle2}
+delete mySuperCircle2.radius
+console.log(mySuperFigure.radius)
+console.log(mySuperFigure.getType())

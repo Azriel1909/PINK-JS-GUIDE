@@ -1,14 +1,28 @@
+// > Methods
+
 let circle = {
-  radius: 100,
-  center: {
-      x: 0,
-      y:0
+  r: 100, // Radius
+  c: { // Center
+    x:0,
+    y:0
   },
-  getType () {
-      return "circle";
+
+  // - Method 1
+  /*getType: function() {
+    return 'Circle'
+  }*/
+
+  // - Method 2
+  getType() {
+    return 'Circle'
   }
-};
+}
 
-console.log(circle.getType());
-console.log(circle["getType"]() );
+// ! In order to call up the method, we usually use Dot Notation
 
+// - Point to the object, name the method, and then add the parenthesis
+console.log(circle.getType())
+
+// ! The method can also be called up using the Bracket Notation
+
+console.log(circle['getType']())

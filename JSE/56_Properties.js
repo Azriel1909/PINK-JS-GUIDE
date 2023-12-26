@@ -66,3 +66,11 @@ let enumerableKeys = Object.keys(myContact)
 let allKeys = Object.getOwnPropertyNames(myContact)
 console.log(enumerableKeys)
 console.log(allKeys)
+
+// + Object Configuration
+
+/**
+ * Object.preventExtensions(obj): We won't be able to add new properties to the object obj.
+ * Object.seal(obj): Does not allow the adding, removing or configuring of the properties of the object obj.
+ * Object.freeze(obj): Similar to the previous one (Object.seal), but additionally makes it impossible to change the value of the property. 
+ * */

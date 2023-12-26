@@ -25,3 +25,21 @@ console.log(desc1)
 
 let desc2 = Object.getOwnPropertyDescriptor(contact, 'age')
 console.log(desc2)
+
+// ! Setter and Getter Methods do not have Writeable fields in the configuration.
+
+// - We can set our own property configuration using Object.defineProperty method.
+
+let myContact = {}
+
+Object.defineProperty(myContact, '_age', {
+  value: 21,
+  writable: true,
+  enumerable: false,
+  configurable: true
+})
+
+Object.keys(myContact)
+console.log(myContact._age)
+let desc3 = Object.getOwnPropertyDescriptor(myContact, '_age')
+console.log(desc3)

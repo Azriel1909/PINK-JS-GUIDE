@@ -29,3 +29,24 @@ let contact = {
 console.log(contact.phone)
 contact.phone = '111-222-333'
 console.log(contact.phone)
+
+console.log('----------------- Getters and Setters')
+
+let contact2 = {
+  _age: 35,
+  firstName: 'Eduardo',
+  lastName: 'Cerati',
+  get fullName(){
+    return `Full Name: ${this.firstName} ${this.lastName}`
+  },
+  get age(){
+    return this._age
+  },
+  set age(number) {
+    if (number > 0) this._age = number
+  }
+}
+
+console.log(contact2.fullName)
+contact2.age = -20
+console.log(contact2.age)

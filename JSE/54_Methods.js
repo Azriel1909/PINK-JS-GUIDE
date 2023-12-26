@@ -84,3 +84,23 @@ let add = function(a,b) {
 }
 
 let add2 = (a,b) => a + b
+
+// * Lexical Scoping
+// ! We should not use arrow functions to declare object methods
+
+// > this inside nested objects
+
+let mySuperCircle3 = {
+  radius: 100,
+  center : {
+    x: 0,
+    y: 0,
+    show(){console.log(`${this.x}, ${this.y}`)}
+  }
+}
+mySuperCircle3.center.show()
+
+let test1 = {
+  // ? Here is a reference to the same Object
+  point: mySuperCircle3.center
+}

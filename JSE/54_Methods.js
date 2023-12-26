@@ -74,3 +74,13 @@ let mySuperFigure = {...mySuperCircle2}
 delete mySuperCircle2.radius
 console.log(mySuperFigure.radius)
 console.log(mySuperFigure.getType())
+
+// ! The this keyword is not aplicable to objects
+
+// > Arrow functions
+
+let add = function(a,b) {
+  return a + b
+}
+
+let add2 = (a,b) => a + b

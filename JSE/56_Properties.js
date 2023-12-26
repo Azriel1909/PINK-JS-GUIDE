@@ -39,7 +39,30 @@ Object.defineProperty(myContact, '_age', {
   configurable: true
 })
 
-Object.keys(myContact)
+Object.keys(myContact) // ! It is not returned
 console.log(myContact._age)
 let desc3 = Object.getOwnPropertyDescriptor(myContact, '_age')
 console.log(desc3)
+
+// ? How to change the configuration of this property?
+
+Object.defineProperty(myContact, '_age', {
+  value: myContact._age,
+  writable: false, // ! We cannot modify the value
+  enumerable: false,
+  configurable: true // ! If the configurable field is false, you cannot configure or delete the value
+})
+
+myContact._age = 109
+console.log(myContact._age)
+let desc4 = Object.getOwnPropertyDescriptor(myContact, '_age')
+console.log(desc4)
+
+// - Objects.keys and for...in loop operate only on properties that are enumerable
+
+// * We can retrieve all fields without paying attention to their configuration, we can use Object.getOwnPropertyNames method. It works similar to Object.keys, but it returns an array of all the keys (property names), regardless of whether they are enumerable or not.
+
+let enumerableKeys = Object.keys(myContact)
+let allKeys = Object.getOwnPropertyNames(myContact)
+console.log(enumerableKeys)
+console.log(allKeys)

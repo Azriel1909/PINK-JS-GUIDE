@@ -42,3 +42,5 @@ let point = function(x,y){
 }
 
 // * Let's make it shorter
+
+let createPoint = (x,y) => ({x,y})

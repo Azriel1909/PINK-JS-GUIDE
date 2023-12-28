@@ -11,3 +11,12 @@ let myPoint = function(x,y) {
   return obj
 }
 
+let myPointA = myPoint(1,1)
+let myPointB = myPoint(1,2)
+let myPointC = myPoint(1,3)
+let myPointD = myPoint(1,4)
+
+console.log(`A (${myPointA.x},${myPointA.y})`)
+console.log(`B (${myPointB.x},${myPointB.y})`)
+console.log(`C (${myPointC.x},${myPointC.y})`)
+console.log(`D (${myPointD.x},${myPointD.y})`)

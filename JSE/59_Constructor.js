@@ -6,7 +6,7 @@
 
 // * Constructor names begin with capital letters 
 
-let MyColoredPoint = function (x, y, color) {
+let MyColoredPoint = function (x, y, color) { // * Names of constructor begins with Capital Letter
   let _info = '... Object under construction'
   let _color = color
   console.log(_info)

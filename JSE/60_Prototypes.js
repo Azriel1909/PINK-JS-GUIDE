@@ -16,6 +16,11 @@ let coloredPoint = {color:'pink'} // - Only color
 
 // ! One of the properties that each object inherits is the _proto_ field.
 
+console.log(Object.getOwnPropertyNames(coloredPoint))
+console.log(coloredPoint.color)
+
+console.log('----------------')
+
 coloredPoint._proto_ = point
 
 // ! _proto_ is considered Obsolete
@@ -28,8 +33,22 @@ console.log(coloredPoint.x)
 
 console.log('----------------')
 
-coloredPoint.x = 200
+console.log(Object.getOwnPropertyNames(point))
+console.log(point.x)
+
+console.log('----------------')
+
+coloredPoint.x = 200 // ! New Property
 console.log(coloredPoint.x)
 console.log(point.x)
 console.log(Object.getOwnPropertyNames(coloredPoint))
 
+// ! Js does not find the property directly in the object, it creates it, and assigns a new value to it. This way, among other things, the properties of the prototype are protected (and the same prototype can be used by many different objects)
+
+// * Testing: Let's change the value of the properties of the point object, which is our prototype
+
+console.log('----------------')
+
+point.y = 900
+console.log(coloredPoint.y) // ! Undefined
+console.log(point.y)

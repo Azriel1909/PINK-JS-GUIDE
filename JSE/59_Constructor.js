@@ -79,3 +79,7 @@ let reallyEmptyObject = Object.create(null)
 console.log(typeof(reallyEmptyObject.constructor))
 
 // ! Undefined will appear because there is no property called "constructor" in reallyEmptyObject. This time we created a really empty object
+
+// + Class
+
+// - Another important method for creating objects. It is through the use of classes. It was added in one of the following language editions (ECMA6)

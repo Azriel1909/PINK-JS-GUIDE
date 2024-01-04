@@ -44,11 +44,38 @@ console.log(coloredPoint1.constructor.name)
 
 console.log(typeof(coloredPoint1.constructor)) // ! Function
 
-// * Let's try the same with an empty object
+// - Let's try the same with an empty object
 
-let emptyObject = {}
-console.log(typeof(emptyObject.constructor))  // ! Function
+let emptyObjectTest = {}
+console.log(typeof(emptyObjectTest.constructor))  // ! Function
 
-// * The Object Constructor contains some generic properties and methods that can be useful in all objects.
+// - The Object Constructor contains some generic properties and methods that can be useful in all objects.
 
 // ! Most of the objects we creates inherit properties from the generic Object constructor object
+
+// + new Object ()
+
+// ? Since Object is the constructor if a generic object, can we use it to create a new object? Of course we can!!
+
+console.log('--------------- New Object')
+
+let emptyObject = new Object()
+
+// * Empty object without out properties but with properties supported by Object
+
+console.log(emptyObject.constructor.name)
+
+let anotherEmptyObject = {}
+
+console.log(anotherEmptyObject.constructor.name)
+
+// ! This means that the objects contain what has been added from the constructor object
+
+// + Object.create method
+
+// - It allows to create an object based on an existing Object (which will be used as a prototype of our new object)
+
+let reallyEmptyObject = Object.create(null)
+console.log(typeof(reallyEmptyObject.constructor))
+
+// ! Undefined will appear because there is no property called "constructor" in reallyEmptyObject. This time we created a really empty object

@@ -1,4 +1,4 @@
-// > Constructor and the 'new' keyword
+// + Constructor and the 'new' keyword
 
 // * Remember: The factory mechanisms is a programming pattern.
 
@@ -34,4 +34,21 @@ console.log(coloredPoint4._color)
 
 // - No return keyword, the constructor returns automatically the implicitly created object.
 
-// * Because the constructor is a function we can also use the closure here.
+// - Because the constructor is a function we can also use the closure here.
+
+// ! The name of the constructor will appear on the console.
+
+console.log(coloredPoint1.constructor.name)
+
+// ? After all we did not define the property of the constructor in our object
+
+console.log(typeof(coloredPoint1.constructor)) // ! Function
+
+// * Let's try the same with an empty object
+
+let emptyObject = {}
+console.log(typeof(emptyObject.constructor))  // ! Function
+
+// * The Object Constructor contains some generic properties and methods that can be useful in all objects.
+
+// ! Most of the objects we creates inherit properties from the generic Object constructor object

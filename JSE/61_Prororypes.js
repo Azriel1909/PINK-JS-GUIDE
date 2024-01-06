@@ -23,3 +23,8 @@ coloredPoint.x = 900 // ! New Property
 console.log(`x: ${coloredPoint.x}`)
 console.log(`x: ${point.x}`)
 console.log(`property names: ${Object.getOwnPropertyNames(coloredPoint)}`)
+
+// * Let's change the value of one of the properties of the point object
+point.y = 900
+console.log(`y: ${coloredPoint.y}`)
+console.log(`y: ${point.y}`)

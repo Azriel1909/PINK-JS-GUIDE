@@ -31,17 +31,27 @@ console.log(`y: ${point.y}`)
 
 // +  _proto_
 
-let figure = {
-  getType: function(){
-    // - The method will check if we have a type field in the object
-    return this.type ? this.type : 'unknown'
+figure = {
+  getType: function() {
+      return this.type ? this.type : "unknown";
   }
 }
 
 let circle = {
-  // - This Object contains the properties of a circle
-  type: 'circle',
-  center: {x:0,y:0},
+  type: "circle",
+  center: {x:0, y:0},
   radius: 100
 }
 
+circle.__proto__ = figure;
+
+// ! Using _proto_ we assign a figure as the prototype of circle
+
+circle._proto_ = figure
+
+// * Let's call the method getType()
+
+console.log('--------------------')
+
+console.log(figure.getType());
+console.log(circle.getType());

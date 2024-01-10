@@ -28,3 +28,12 @@ console.log(`property names: ${Object.getOwnPropertyNames(coloredPoint)}`)
 point.y = 900
 console.log(`y: ${coloredPoint.y}`)
 console.log(`y: ${point.y}`)
+
+// +  _proto_
+
+let figure = {
+  getType: function(){
+    // ? The method will check if we have a type field in the object
+    return this.type ? this.type : 'unknown'
+  }
+}

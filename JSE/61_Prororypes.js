@@ -33,7 +33,15 @@ console.log(`y: ${point.y}`)
 
 let figure = {
   getType: function(){
-    // ? The method will check if we have a type field in the object
+    // - The method will check if we have a type field in the object
     return this.type ? this.type : 'unknown'
   }
 }
+
+let circle = {
+  // - This Object contains the properties of a circle
+  type: 'circle',
+  center: {x:0,y:0},
+  radius: 100
+}
+

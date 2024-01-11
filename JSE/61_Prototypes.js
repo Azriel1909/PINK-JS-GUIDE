@@ -69,6 +69,17 @@ console.log('--------------------')
 
 console.log(circle.getType())
 
+// + Object.create
+
+let myIncredibleCircle = Object.create(figure)
+myIncredibleCircle.type = 'Circle'
+myIncredibleCircle.center = {x:0,y:0}
+myIncredibleCircle.radius = 800
+
+console.log('--------------------') 
+
+console.log(myIncredibleCircle.getType())
+
 
 
 

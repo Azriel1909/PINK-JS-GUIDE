@@ -31,27 +31,28 @@ console.log(`y: ${point.y}`)
 
 // +  _proto_
 
-figure = {
-  getType: function() {
-      return this.type ? this.type : "unknown";
+let figure = {
+  // - The method will check if we have a type field in the object, returning either its value or a string
+  getType: function(){
+    return this.type ? this.type : 'unknown'
   }
 }
 
 let circle = {
-  type: "circle",
-  center: {x:0, y:0},
-  radius: 100
+  type: 'circle',
+  center: {x:0,y:0},
+  radius: 900
 }
-
-circle.__proto__ = figure;
 
 // ! Using _proto_ we assign a figure as the prototype of circle
 
-circle._proto_ = figure
+circle.__proto__ = figure
 
 // * Let's call the method getType()
 
-console.log('--------------------')
+console.log('--------------------') 
 
-console.log(figure.getType());
-console.log(circle.getType());
+console.log(figure.getType())
+console.log(circle.getType())
+
+// ? Js does not find the getType method directly in the circle, so it start searching the prototype chain

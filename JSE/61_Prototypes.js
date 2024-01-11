@@ -56,3 +56,21 @@ console.log(figure.getType())
 console.log(circle.getType())
 
 // ? Js does not find the getType method directly in the circle, so it start searching the prototype chain
+
+// + Object.setProtoTypeOf: Associate the target object  with the prototype object
+
+// + Object.getProtoTypeOf: Returns the prototype of the indicated object
+
+Object.setPrototypeOf(circle, figure)
+// ? The proto variable refers to the figure object
+let proto = Object.getPrototypeOf(circle)
+
+console.log('--------------------') 
+
+console.log(circle.getType())
+
+
+
+
+
+

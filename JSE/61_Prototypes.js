@@ -80,6 +80,26 @@ console.log('--------------------')
 
 console.log(myIncredibleCircle.getType())
 
+// + Constructor
+
+let MyIncredibleFigure = function(){
+  this.getType = function() {
+    return this.type ? this.type : 'Unknown'
+  }
+}
+
+let myFigure = new MyIncredibleFigure
+
+let MyIncredibleCircle = function(center, radius) {
+  this.type = 'Circle'
+  this.center = center
+  this.radius = radius
+}
+
+MyIncredibleCircle.prototype = myFigure
+
+let circle1 = new MyIncredibleCircle({x:10,y:10}, 10)
+let circle2 = new MyIncredibleCircle({x:20,y:20}, 20)
 
 
 

@@ -110,3 +110,10 @@ Triangle.prototype = myFigure
 let triangle1 = new Triangle({x:0, y:0}, {x:50, y:50}, {x:10, y:100});
 console.log(`Type: ${circle1.getType()}`);
 console.log(`TYpe: ${triangle1.getType()}`);
+
+// * Let's modify an object that is a 'circle prototype'
+
+MyIncredibleCircle.prototype.hi = function(){console.log('Hallo!')}
+circle1.hi()
+triangle1.hi()
+myFigure.hi()

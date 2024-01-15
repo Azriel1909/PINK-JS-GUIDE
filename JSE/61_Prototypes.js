@@ -114,6 +114,12 @@ console.log(`TYpe: ${triangle1.getType()}`);
 // * Let's modify an object that is a 'circle prototype'
 
 MyIncredibleCircle.prototype.hi = function(){console.log('Hallo!')}
+
+console.log('--------------------') 
+
 circle1.hi()
 triangle1.hi()
 myFigure.hi()
+
+let testString = new String('Uno DOs Tres')
+console.log(testString.length)

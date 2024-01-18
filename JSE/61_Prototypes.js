@@ -123,5 +123,3 @@ myFigure.hi()
 
 let testString = new String('Uno DOs Tres')
 console.log(testString.length)
-let testString2 = new String('Uno DOs Tres')
-console.log(testString.length)
